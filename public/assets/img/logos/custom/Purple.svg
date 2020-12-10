@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="378px" height="242px" viewBox="0 0 378 242" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style type="text/css">
+        .st0{opacity:0.2;}
+        .st1{opacity:0.2;enable-background:new    ;}
+    </style>
+    <title>Dark / Purple</title>
+    <style type="text/css">
+        .st0{opacity:0.2;}
+        .st1{opacity:0.2;enable-background:new    ;}
+    </style>
+    <g id="Log-Host" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy-12" transform="translate(-210.000000, -273.000000)">
+            <g id="Dark-/-Purple" transform="translate(210.800010, 273.600011)">
+                <g id="Group-5" transform="translate(129.040006, 0.000000)">
+                    <path d="M1.87110193,77.553184 L19.5119371,78.9523729 L19.5124667,103.568414 L1.87112185,100.040078 L1.87110193,77.553184 Z M19.5118999,42.188314 L19.5118999,66.1155116 L1.87110014,64.7171505 L1.87110014,43.9521465 L19.5118999,42.188314 Z M19.5124533,9.37906796 L19.5119434,29.189529 L1.87110247,30.9541906 L1.87112158,14.0369386 L19.5124533,9.37906796 Z" id="Combined-Shape" stroke="grey" stroke-width="3.74220028"></path>
+                    <path d="M17.1067023,134.18461 L17.1067023,6.41520048 L38.4907039,0 L38.4907039,119.215809 L130.441911,107.454608 L130.441911,128.83861 L38.4907039,140.59981 L17.1067023,134.18461 Z" id="Combined-Shape" fill="grey"></path>
+                    <path d="M128.569899,76.8586723 L128.57074,96.6904991 L49.984564,105.365596 L49.9840534,79.1591276 L128.569899,76.8586723 Z M49.984294,41.01906 L128.570089,46.8494219 L128.569844,64.0218926 L49.9840375,66.3233014 L49.984294,41.01906 Z M49.9845837,2.17129994 L128.570763,13.9081969 L128.570173,33.9829429 L49.9843313,28.1525775 L49.9845837,2.17129994 Z" id="Combined-Shape" stroke="grey" stroke-width="3.74220028"></path>
+                    <polygon id="Rectangle" fill="grey" points="108.523309 18.3882258 121.35371 19.783342 121.35371 25.8726264 108.523309 24.5936333"></polygon>
+                    <polygon id="Rectangle-Copy-25" fill="grey" points="108.523309 51.9573425 121.35371 52.71672 121.35371 57.7368043 108.523309 58.0089485"></polygon>
+                    <polygon id="Rectangle-Copy-26" fill="grey" points="108.523309 84.8623065 121.35371 84.369933 121.35371 89.9431736 108.523309 91.4527083"></polygon>
+                </g>
+                <text id="Log-Host" font-family="Muli-Bold, Muli" font-size="56.528007" font-weight="bold" letter-spacing="10.300217">
+                    <tspan x="0" y="224" fill="grey">LOG </tspan>
+                    <tspan x="178.739471" y="224" fill="grey">HOST</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
