@@ -103,7 +103,7 @@
         <div class="container">
             <div class="columns is-vcentered">
 
-                <div class="column is-6 is-offset-3 is-hero-title has-text-centered">
+                <div class="column is-6 mt-50 is-offset-3 is-hero-title has-text-centered">
                     <h1 class="title is-1 is-medium">
                         Produkte.
                     </h1>
@@ -118,7 +118,7 @@
 
 <!-- Pricing Section -->
 <div class="section section-primary has-pseudo-lines z-index-0">
-    <div class="container mb-80">
+    <div class="container">
         <!-- Pricing wrapper -->
         <div class="switch-pricing-wrapper">
             <div class="pricing-container">
