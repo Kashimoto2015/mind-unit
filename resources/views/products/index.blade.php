@@ -4,86 +4,10 @@
     <title> Mind-Unit - Products</title>
 </head>
 
-@section('content')
+@section('hero')
 <!-- Hero and Navbar -->
 <div class="hero is-relative is-app-grey is-medium is-pricing has-animated-waves waves-bottom waves-primary">
-
-    <!--Nav-->
-    <nav class="navbar navbar-wrapper navbar-faded navbar-dark">
-        <div class="container">
-            <!-- Brand -->
-            <div class="navbar-brand">
-                <a class="navbar-item" href="/">
-                    <img class="light-logo" src="{{ asset('assets/img/logos/logo/bulkit-white.svg') }}" alt="">
-                    <img class="dark-logo switcher-logo" src="{{ asset('assets/img/logos/logo/bulkit-core.svg') }}" alt="">
-                </a>
-
-                <!-- Responsive toggle -->
-                <div class="custom-burger" data-target="">
-                    <a id="" class="responsive-btn" href="javascript:void(0);">
-                            <span class="menu-toggle">
-                                <span class="icon-box-toggle">
-                                    <span class="rotate">
-                                        <i class="icon-line-top"></i>
-                                        <i class="icon-line-center"></i>
-                                        <i class="icon-line-bottom"></i>
-                                    </span>
-                            </span>
-                            </span>
-                    </a>
-                </div>
-                <!-- /Responsive toggle -->
-            </div>
-
-            <!-- Navbar menu -->
-            <div class="navbar-menu">
-                <!-- Navbar Start -->
-                <div class="navbar-start">
-                    <!-- Navbar item -->
-                    <a class="navbar-item is-slide" href="/about-us">
-                        About Us
-                    </a>
-                    <!-- Navbar item -->
-                    <a class="navbar-item is-slide" href="/products">
-                        Products
-                    </a>
-                    <!-- Navbar item -->
-                    <a class="navbar-item is-slide" href="/register">
-                        Register
-                    </a>
-                </div>
-
-                <!-- Navbar end -->
-                <div class="navbar-end">
-                    <!-- Signup button -->
-                    <div class="navbar-item">
-                        @guest
-                            <a id="#signup-btn" href="/login" class="button button-signup btn-outlined is-bold btn-align rounded raised">
-                                Login
-                            </a>
-                        @endguest
-                        @auth
-                            <div class="button button-signup btn btn-outlined is-bold btn-align rounded raised is-drop">{{ auth()->user()->name }} <i class="sl sl-icon-arrow-down is-icon-xs ml-2"></i>
-                                <div class="dropContain">
-                                    <div class="dropOut">
-                                        <ul>
-                                            <li><a href="/credits" style="text-decoration: none;"><i class="drop-icon sl sl-icon-wallet"></i> Guthaben: {{ auth()->user()->credit }}€</a></li>
-                                            <li>
-                                                <a href="{{ route('logout') }}" style="text-decoration: none;" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i class="drop-icon sl sl-icon-logout"></i> Logout</a>
-                                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                                    @csrf
-                                                </form>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        @endauth
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
+@endsection
 
     <!--Animated Waves-->
     <div class="animated-waves">
