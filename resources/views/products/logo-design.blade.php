@@ -210,7 +210,7 @@
                                 <div class="plan-item">-</div>
                             </div>
                             <div class="plan-footer">
-                                <div class="plan-price"><span class="plan-price-amount">20<span class="plan-price-currency">€</span></span></div>
+                                <div class="plan-price"><span class="plan-price-amount">14,99<span class="plan-price-currency">€</span></span></div>
                                 @guest
                                     <a href="/login" class="button is-fullwidth">Anmelden</a>
                                 @endguest
@@ -233,7 +233,7 @@
                                 <div class="plan-item">-</div>
                             </div>
                             <div class="plan-footer">
-                                <div class="plan-price"><span class="plan-price-amount">20<span class="plan-price-currency">€</span></span></div>
+                                <div class="plan-price"><span class="plan-price-amount">24,99<span class="plan-price-currency">€</span></span></div>
                                 @guest
                                     <a href="/login" class="button is-fullwidth">Anmelden</a>
                                 @endguest
@@ -256,7 +256,7 @@
                                 <div class="plan-item">-</div>
                             </div>
                             <div class="plan-footer">
-                                <div class="plan-price"><span class="plan-price-amount">20<span class="plan-price-currency">€</span></span></div>
+                                <div class="plan-price"><span class="plan-price-amount">32,99<span class="plan-price-currency">€</span></span></div>
                                 @guest
                                     <a href="/login" class="button is-fullwidth">Anmelden</a>
                                 @endguest
@@ -279,7 +279,7 @@
                                 <div class="plan-item">Express Lieferung</div>
                             </div>
                             <div class="plan-footer">
-                                <div class="plan-price"><span class="plan-price-amount">20<span class="plan-price-currency">€</span></span></div>
+                                <div class="plan-price"><span class="plan-price-amount">49,99<span class="plan-price-currency">€</span></span></div>
                                 @guest
                                     <a href="/login" class="button is-fullwidth">Anmelden</a>
                                 @endguest
