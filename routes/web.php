@@ -19,4 +19,6 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('in
 
 Route::get('/products', [\App\Http\Controllers\ServiceController::class, 'index']);
 
+Route::get('/about-us', function(){return view('about-us');});
+
 Route::get('/products/{index}', [\App\Http\Controllers\ServiceController::class, 'category']);
