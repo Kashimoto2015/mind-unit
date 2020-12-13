@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
+
+Route::get('/products', [\App\Http\Controllers\ServiceController::class, 'index']);
+
+Route::get('/products/{index}', [\App\Http\Controllers\ServiceController::class, 'category']);
