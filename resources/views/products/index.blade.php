@@ -118,7 +118,7 @@
 
 <!-- Pricing Section -->
 <div class="section section-primary has-pseudo-lines z-index-0">
-    <div class="container">
+    <div class="container mb-80">
         <!-- Pricing wrapper -->
         <div class="switch-pricing-wrapper">
             <div class="pricing-container">
@@ -224,8 +224,6 @@
                 </div>
             </div>
         </div>
-        <div class="mb-80"></div>
-        <div class="mb-80"></div>
         <div class="mb-80"></div>
     </div>
 </div>
