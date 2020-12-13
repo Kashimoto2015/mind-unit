@@ -8,7 +8,7 @@
 <!-- Hero and Navbar -->
 <div class="hero is-relative is-app-grey is-medium is-pricing has-animated-waves waves-bottom waves-primary">
 @endsection
-
+@section('content')
     <!--Animated Waves-->
     <div class="animated-waves">
         <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
