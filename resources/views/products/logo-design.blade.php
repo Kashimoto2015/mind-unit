@@ -226,9 +226,9 @@
                                 <div class="plan-item"><b>Professionelles</b> Datei</div>
                                 <div class="plan-item"><b>PNG</b> Datei</div>
                                 <div class="plan-item">Verschiedene Farben</div>
+                                <div class="plan-item">Alle Rechte</div>
                                 <div class="plan-item">1080p Qualität</div>
                                 <div class="plan-item"><b>5</b> Überarbeitungen</div>
-                                <div class="plan-item">-</div>
                                 <div class="plan-item">-</div>
                                 <div class="plan-item">-</div>
                             </div>
@@ -249,10 +249,10 @@
                                 <div class="plan-item"><b>Professionelles</b> Datei</div>
                                 <div class="plan-item"><b>PNG</b> Datei</div>
                                 <div class="plan-item">Verschiedene Farben</div>
+                                <div class="plan-item">Alle Rechte</div>
                                 <div class="plan-item">1080p Qualität</div>
                                 <div class="plan-item"><b>7</b> Überarbeitungen</div>
                                 <div class="plan-item"><b>Vector</b> Dateien</div>
-                                <div class="plan-item">-</div>
                                 <div class="plan-item">-</div>
                             </div>
                             <div class="plan-footer">
@@ -272,11 +272,11 @@
                                 <div class="plan-item"><b>Professionelles</b> Datei</div>
                                 <div class="plan-item"><b>PNG</b> Datei</div>
                                 <div class="plan-item">Verschiedene Farben</div>
+                                <div class="plan-item">Alle Rechte</div>
                                 <div class="plan-item">1080p Qualität</div>
                                 <div class="plan-item"><b>10</b> Überarbeitungen</div>
                                 <div class="plan-item"><b>Vector</b> Dateien</div>
                                 <div class="plan-item"><b>Source</b> Dateien</div>
-                                <div class="plan-item">Express Lieferung</div>
                             </div>
                             <div class="plan-footer">
                                 <div class="plan-price"><span class="plan-price-amount">20<span class="plan-price-currency">€</span></span></div>
