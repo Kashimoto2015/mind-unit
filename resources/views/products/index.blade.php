@@ -103,7 +103,7 @@
         <div class="container">
             <div class="columns is-vcentered">
 
-                <div class="column is-6 mt-50 is-offset-3 is-hero-title has-text-centered">
+                <div class="column is-6 mt-60 is-offset-3 is-hero-title has-text-centered">
                     <h1 class="title is-1 is-medium">
                         Produkte.
                     </h1>
