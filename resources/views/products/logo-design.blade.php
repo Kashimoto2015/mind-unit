@@ -200,7 +200,7 @@
                         <div class="pricing-plan">
                             <div class="plan-header">Starter</div>
                             <div class="plan-items">
-                                <div class="plan-item"><b>Professionelles</b> Datei</div>
+                                <div class="plan-item"><b>Professionelles</b> Logo</div>
                                 <div class="plan-item"><b>PNG</b> Datei</div>
                                 <div class="plan-item">Verschiedene Farben</div>
                                 <div class="plan-item">Alle Rechte</div>
@@ -223,7 +223,7 @@
                         <div class="pricing-plan is-secondary">
                             <div class="plan-header">Pro</div>
                             <div class="plan-items">
-                                <div class="plan-item"><b>Professionelles</b> Datei</div>
+                                <div class="plan-item"><b>Professionelles</b> Logo</div>
                                 <div class="plan-item"><b>PNG & JPEG</b> Datei</div>
                                 <div class="plan-item">Verschiedene Farben</div>
                                 <div class="plan-item">Alle Rechte</div>
@@ -246,7 +246,7 @@
                         <div class="pricing-plan is-primary is-active">
                             <div class="plan-header">Business</div>
                             <div class="plan-items">
-                                <div class="plan-item"><b>Professionelles</b> Datei</div>
+                                <div class="plan-item"><b>Professionelles</b> Logo</div>
                                 <div class="plan-item"><b>PNG & JPEG</b> Datei</div>
                                 <div class="plan-item">Verschiedene Farben</div>
                                 <div class="plan-item">Alle Rechte</div>
@@ -269,7 +269,7 @@
                         <div class="pricing-plan is-accent">
                             <div class="plan-header">Enterprise</div>
                             <div class="plan-items">
-                                <div class="plan-item"><b>Professionelles</b> Datei</div>
+                                <div class="plan-item"><b>Professionelles</b> Logo</div>
                                 <div class="plan-item"><b>PNG & JPEG</b> Datei</div>
                                 <div class="plan-item">Verschiedene Farben</div>
                                 <div class="plan-item">Alle Rechte</div>
