@@ -200,12 +200,12 @@
                         <div class="pricing-plan">
                             <div class="plan-header">Starter</div>
                             <div class="plan-items">
-                                <div class="plan-item"><b>20GB</b> Storage</div>
-                                <div class="plan-item"><b>100</b> Domains</div>
+                                <div class="plan-item"><b>Professionelles</b> Datei</div>
+                                <div class="plan-item"><b>PNG</b> Datei</div>
+                                <div class="plan-item">Verschiedene Farben</div>
+                                <div class="plan-item">Alle Rechte</div>
                                 <div class="plan-item">-</div>
                                 <div class="plan-item">-</div>
-                                <div class="plan-item"><b>20GB</b> Storage</div>
-                                <div class="plan-item"><b>100</b> Domains</div>
                                 <div class="plan-item">-</div>
                                 <div class="plan-item">-</div>
                             </div>
@@ -223,13 +223,13 @@
                         <div class="pricing-plan is-secondary">
                             <div class="plan-header">Pro</div>
                             <div class="plan-items">
-                                <div class="plan-item"><b>20GB</b> Storage</div>
-                                <div class="plan-item"><b>25</b> Domains</div>
-                                <div class="plan-item"><b>1TB</b> Bandwidth</div>
+                                <div class="plan-item"><b>Professionelles</b> Datei</div>
+                                <div class="plan-item"><b>PNG</b> Datei</div>
+                                <div class="plan-item">Verschiedene Farben</div>
+                                <div class="plan-item">1080p Qualität</div>
+                                <div class="plan-item"><b>5</b> Überarbeitungen</div>
                                 <div class="plan-item">-</div>
-                                <div class="plan-item"><b>20GB</b> Storage</div>
-                                <div class="plan-item"><b>25</b> Domains</div>
-                                <div class="plan-item"><b>1TB</b> Bandwidth</div>
+                                <div class="plan-item">-</div>
                                 <div class="plan-item">-</div>
                             </div>
                             <div class="plan-footer">
@@ -246,14 +246,14 @@
                         <div class="pricing-plan is-primary is-active">
                             <div class="plan-header">Business</div>
                             <div class="plan-items">
-                                <div class="plan-item"><b>200GB</b> Storage</div>
-                                <div class="plan-item"><b>50</b> Domains</div>
-                                <div class="plan-item"><b>1TB</b> Bandwidth</div>
-                                <div class="plan-item"><b>100</b> Email Boxes</div>
-                                <div class="plan-item"><b>200GB</b> Storage</div>
-                                <div class="plan-item"><b>50</b> Domains</div>
-                                <div class="plan-item"><b>1TB</b> Bandwidth</div>
-                                <div class="plan-item"><b>100</b> Email Boxes</div>
+                                <div class="plan-item"><b>Professionelles</b> Datei</div>
+                                <div class="plan-item"><b>PNG</b> Datei</div>
+                                <div class="plan-item">Verschiedene Farben</div>
+                                <div class="plan-item">1080p Qualität</div>
+                                <div class="plan-item"><b>7</b> Überarbeitungen</div>
+                                <div class="plan-item"><b>Vector</b> Dateien</div>
+                                <div class="plan-item">-</div>
+                                <div class="plan-item">-</div>
                             </div>
                             <div class="plan-footer">
                                 <div class="plan-price"><span class="plan-price-amount">20<span class="plan-price-currency">€</span></span></div>
@@ -269,14 +269,14 @@
                         <div class="pricing-plan is-accent">
                             <div class="plan-header">Enterprise</div>
                             <div class="plan-items">
-                                <div class="plan-item"><b>2TB</b> Storage</div>
-                                <div class="plan-item"><b>100</b> Domains</div>
-                                <div class="plan-item"><b>1TB</b> Bandwidth</div>
-                                <div class="plan-item"><b>1000</b> Email Boxes</div>
-                                <div class="plan-item"><b>2TB</b> Storage</div>
-                                <div class="plan-item"><b>100</b> Domains</div>
-                                <div class="plan-item"><b>1TB</b> Bandwidth</div>
-                                <div class="plan-item"><b>1000</b> Email Boxes</div>
+                                <div class="plan-item"><b>Professionelles</b> Datei</div>
+                                <div class="plan-item"><b>PNG</b> Datei</div>
+                                <div class="plan-item">Verschiedene Farben</div>
+                                <div class="plan-item">1080p Qualität</div>
+                                <div class="plan-item"><b>10</b> Überarbeitungen</div>
+                                <div class="plan-item"><b>Vector</b> Dateien</div>
+                                <div class="plan-item"><b>Source</b> Dateien</div>
+                                <div class="plan-item">Express Lieferung</div>
                             </div>
                             <div class="plan-footer">
                                 <div class="plan-price"><span class="plan-price-amount">20<span class="plan-price-currency">€</span></span></div>
