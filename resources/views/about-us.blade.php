@@ -1,461 +1,829 @@
-@extends('layouts.app')
-@section('hero')
-    <div class="hero is-app-grey">
-        @endsection
-        @section('content')
-            <div id="main-hero" class="hero-body">
-                <div class="container has-text-centered">
-                    <div class="columns is-vcentered">
-                        <div class="column is-6 is-offset-3 has-text-centered is-subheader-caption">
-                            <h1 class="title is-2">
-                                About Us
-                            </h1>
-                            <h2 class="subtitle">Lorem ipsum dolor sit amet consectetur elit.</h2>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title> Bulkit :: About</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+
+    <!--Core CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bulma.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link id="theme-sheet" rel="stylesheet" href="assets/css/core.css">
+
+</head>
+
+<body class="is-theme-core">
+<div class="pageloader"></div>
+<div class="infraloader is-active"></div>
+<!-- Hero (Parallax) and nav -->
+<div class="hero is-app-grey">
+
+    <nav class="navbar navbar-wrapper is-cloned">
+        <div class="container">
+            <!-- Brand -->
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    <img class="light-logo" src="{{ asset('assets/img/logos/logo/bulkit-white.svg') }}" alt="">
+                    <img class="dark-logo switcher-logo" src="{{ asset('assets/img/logos/logo/bulkit-core.svg') }}" alt="">
+                </a>
+
+                <!-- Responsive toggle -->
+                <div class="custom-burger" data-target="">
+                    <a id="" class="responsive-btn" href="javascript:void(0);">
+                                <span class="menu-toggle">
+                                    <span class="icon-box-toggle">
+                                        <span class="rotate">
+                                            <i class="icon-line-top"></i>
+                                            <i class="icon-line-center"></i>
+                                            <i class="icon-line-bottom"></i>
+                                        </span>
+                                </span>
+                                </span>
+                    </a>
+                </div>
+                <!-- /Responsive toggle -->
+            </div>
+
+            <!-- Navbar menu -->
+            <div class="navbar-menu">
+                <!-- Navbar Start -->
+                <div class="navbar-start">
+                    <!-- Navbar item -->
+                    <a class="navbar-item is-slide" href="/about-us">
+                        About Us
+                    </a>
+                    <!-- Navbar item -->
+                    <a class="navbar-item is-slide" href="/products">
+                        Products
+                    </a>
+                    <!-- Navbar item -->
+                    <a class="navbar-item is-slide" href="/register">
+                        Register
+                    </a>
+                </div>
+
+                <!-- Navbar end -->
+                <div class="navbar-end">
+                    <!-- Signup button -->
+                    <div class="navbar-item">
+                        @guest
+                            <a id="#signup-btn" href="/login" class="button button-signup btn-outlined is-bold btn-align rounded raised">
+                                Login
+                            </a>
+                        @endguest
+                        @auth
+                            <div class="button button-signup btn btn-outlined is-bold btn-align rounded raised is-drop">{{ auth()->user()->name }} <i class="sl sl-icon-arrow-down is-icon-xs ml-2"></i>
+                                <div class="dropContain">
+                                    <div class="dropOut">
+                                        <ul>
+                                            <li><a href="/credits" style="text-decoration: none;"><i class="drop-icon sl sl-icon-wallet"></i> Guthaben: {{ auth()->user()->credit }}€</a></li>
+                                            <li>
+                                                <a href="{{ route('logout') }}" style="text-decoration: none;" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i class="drop-icon sl sl-icon-logout"></i> Logout</a>
+                                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                                    @csrf
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        @endauth
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-wrapper is-transparent is-static">
+        <div class="container">
+            <!-- Brand -->
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    <img class="light-logo" src="{{ asset('assets/img/logos/logo/bulkit-white.svg') }}" alt="">
+                    <img class="dark-logo switcher-logo" src="{{ asset('assets/img/logos/logo/bulkit-core.svg') }}" alt="">
+                </a>
+
+                <!-- Responsive toggle -->
+                <div class="custom-burger" data-target="">
+                    <a id="" class="responsive-btn" href="javascript:void(0);">
+                                <span class="menu-toggle">
+                                    <span class="icon-box-toggle">
+                                        <span class="rotate">
+                                            <i class="icon-line-top"></i>
+                                            <i class="icon-line-center"></i>
+                                            <i class="icon-line-bottom"></i>
+                                        </span>
+                                </span>
+                                </span>
+                    </a>
+                </div>
+                <!-- /Responsive toggle -->
+            </div>
+
+            <!-- Navbar menu -->
+            <div class="navbar-menu">
+                <!-- Navbar Start -->
+                <div class="navbar-start">
+                    <!-- Navbar item -->
+                    <a class="navbar-item is-slide" href="/about-us">
+                        About Us
+                    </a>
+                    <!-- Navbar item -->
+                    <a class="navbar-item is-slide" href="/products">
+                        Products
+                    </a>
+                    <!-- Navbar item -->
+                    <a class="navbar-item is-slide" href="/register">
+                        Register
+                    </a>
+                </div>
+
+                <!-- Navbar end -->
+                <div class="navbar-end">
+                    <!-- Signup button -->
+                    <div class="navbar-item">
+                        @guest
+                            <a id="#signup-btn" href="/login" class="button button-signup btn-outlined is-bold btn-align rounded raised">
+                                Login
+                            </a>
+                        @endguest
+                        @auth
+                            <div class="button button-signup btn btn-outlined is-bold btn-align rounded raised is-drop">{{ auth()->user()->name }} <i class="sl sl-icon-arrow-down is-icon-xs ml-2"></i>
+                                <div class="dropContain">
+                                    <div class="dropOut">
+                                        <ul>
+                                            <li><a href="/credits" style="text-decoration: none;"><i class="drop-icon sl sl-icon-wallet"></i> Guthaben: {{ auth()->user()->credit }}€</a></li>
+                                            <li>
+                                                <a href="{{ route('logout') }}" style="text-decoration: none;" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i class="drop-icon sl sl-icon-logout"></i> Logout</a>
+                                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                                    @csrf
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        @endauth
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero image -->
+    <div id="main-hero" class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered">
+                <div class="column is-6 is-offset-3 has-text-centered is-subheader-caption">
+                    <h1 class="title is-2">
+                        About Us
+                    </h1>
+                    <h2 class="subtitle">Lorem ipsum dolor sit amet consectetur elit.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section is-medium">
+    <div class="container">
+
+        <div class="columns is-vcentered is-multiline">
+            <div class="column is-8 is-offset-2 is-relative is-centered-portrait">
+                <!-- 16by9 video -->
+                <div class="bulkit-player-container is-16by9">
+                    <video id="hero-player" class="bulkit-player" playsinline controls data-poster="https://via.placeholder.com/440x440" data-demo-poster="assets/img/demo/video/poster-2b.jpg">
+                        <source src="{{ asset('assets/img/demo/video/hands.mp4') }}" type="video/mp4" />
+                        <source src="{{ asset('assets/img/demo/video/hands.webm') }}" type="video/webm" />
+                    </video>
+                </div>
+            </div>
+
+            <div class="column is-4 is-offset-2">
+                <div class="side-title mb-10">
+                    <h3 class="title is-5">Our Story</h3>
+                </div>
+                <p class="side-paragraph is-size-6 ">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eodem modo is enim tibi nemo dabit, quod,
+                    expetendum sit, id esse laudabile.
+                </p>
+            </div>
+
+            <div class="column is-4">
+                <div class="side-title mb-10">
+                    <h3 class="title is-5">How We Work</h3>
+                </div>
+                <p class="side-paragraph is-size-6">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eodem modo is enim tibi nemo dabit, quod,
+                    expetendum sit, id esse laudabile.
+                </p>
+            </div>
+
+            <div class="column is-4 is-offset-2">
+                <div class="side-title mb-10">
+                    <h3 class="title is-5">Our Process</h3>
+                </div>
+                <p class="side-paragraph is-size-6 ">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eodem modo is enim tibi nemo dabit, quod,
+                    expetendum sit, id esse laudabile.
+                </p>
+            </div>
+
+            <div class="column is-4">
+                <div class="side-title mb-10">
+                    <h3 class="title is-5">Our Values</h3>
+                </div>
+                <p class="side-paragraph is-size-6">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eodem modo is enim tibi nemo dabit, quod,
+                    expetendum sit, id esse laudabile.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Process section -->
+<div class="section is-app-grey is-medium">
+    <div class="container">
+
+        <!-- Title -->
+        <div class="centered-title">
+            <h2>Our Process</h2>
+        </div>
+
+        <!-- Process steps -->
+        <div class="content-wrapper">
+            <div class="columns is-vcentered">
+                <!-- Process step -->
+                <div class="column is-4">
+                    <div class="process-block has-line">
+                        <div class="process-icon is-icon-reveal">
+                            <div class="icon-wrapper">
+                                <i class="im im-icon-Arrow-Over"></i>
+                                <div class="process-number">1</div>
+                            </div>
+                        </div>
+                        <div class="process-info">
+                            <div class="step-number">1</div>
+                            <div class="details">
+                                <div class="motto">Think</div>
+                                <p class="description">Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt, nec et iisque placerat pertinax. Ei minim probatus mea.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Process step -->
+                <div class="column is-4">
+                    <div class="process-block has-line">
+                        <div class="process-icon is-icon-reveal">
+                            <div class="icon-wrapper">
+                                <i class="im im-icon-Arrow-Around"></i>
+                                <div class="process-number">2</div>
+                            </div>
+                        </div>
+                        <div class="process-info">
+                            <div class="step-number">2</div>
+                            <div class="details">
+                                <div class="motto">Iterate</div>
+                                <p class="description">Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt, nec et iisque placerat pertinax. Ei minim probatus mea.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Process step -->
+                <div class="column is-4">
+                    <div class="process-block">
+                        <div class="process-icon is-icon-reveal">
+                            <div class="icon-wrapper">
+                                <i class="im im-icon-Arrow-Refresh"></i>
+                                <div class="process-number">3</div>
+                            </div>
+                        </div>
+                        <div class="process-info">
+                            <div class="step-number">3</div>
+                            <div class="details">
+                                <div class="motto">Create</div>
+                                <p class="description">Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt, nec et iisque placerat pertinax. Ei minim probatus mea.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="section is-medium">
-                <div class="container">
+        </div>
+    </div>
+</div>
 
-                    <div class="columns is-vcentered is-multiline">
-                        <div class="column is-8 is-offset-2 is-relative is-centered-portrait">
-                            <!-- 16by9 video -->
-                            <div class="bulkit-player-container is-16by9">
-                                <video id="hero-player" class="bulkit-player" playsinline controls
-                                       data-poster="https://via.placeholder.com/440x440"
-                                       data-demo-poster="assets/img/demo/video/poster-2b.jpg">
-                                    <source src="assets/img/demo/video/hands.mp4" type="video/mp4"/>
-                                    <source src="assets/img/demo/video/hands.webm" type="video/webm"/>
-                                </video>
-                            </div>
-                        </div>
-
-                        <div class="column is-4 is-offset-2">
-                            <div class="side-title mb-10">
-                                <h3 class="title is-5">Our Story</h3>
-                            </div>
-                            <p class="side-paragraph is-size-6 ">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eodem modo is enim tibi nemo
-                                dabit, quod,
-                                expetendum sit, id esse laudabile.
-                            </p>
-                        </div>
-
-                        <div class="column is-4">
-                            <div class="side-title mb-10">
-                                <h3 class="title is-5">How We Work</h3>
-                            </div>
-                            <p class="side-paragraph is-size-6">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eodem modo is enim tibi nemo
-                                dabit, quod,
-                                expetendum sit, id esse laudabile.
-                            </p>
-                        </div>
-
-                        <div class="column is-4 is-offset-2">
-                            <div class="side-title mb-10">
-                                <h3 class="title is-5">Our Process</h3>
-                            </div>
-                            <p class="side-paragraph is-size-6 ">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eodem modo is enim tibi nemo
-                                dabit, quod,
-                                expetendum sit, id esse laudabile.
-                            </p>
-                        </div>
-
-                        <div class="column is-4">
-                            <div class="side-title mb-10">
-                                <h3 class="title is-5">Our Values</h3>
-                            </div>
-                            <p class="side-paragraph is-size-6">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eodem modo is enim tibi nemo
-                                dabit, quod,
-                                expetendum sit, id esse laudabile.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
+<!-- Counters section -->
+<div class="section is-medium parallax is-cover is-relative" data-background="https://via.placeholder.com/1920x1080" data-color="#000" data-color-opacity="0.7" data-demo-background="assets/img/demo/hero-8.jpg">
+    <div class="container">
+        <div class="centered-title is-inverted">
+            <h2>Work with us !</h2>
+            <div class="subheading">
+                We do everything to satisfy our clients. Let's start a new story together.
             </div>
+        </div>
 
-            <!-- Process section -->
-            <div class="section is-app-grey is-medium">
-                <div class="container">
-
-                    <!-- Title -->
-                    <div class="centered-title">
-                        <h2>Our Process</h2>
-                    </div>
-
-                    <!-- Process steps -->
-                    <div class="content-wrapper">
-                        <div class="columns is-vcentered">
-                            <!-- Process step -->
-                            <div class="column is-4">
-                                <div class="process-block has-line">
-                                    <div class="process-icon is-icon-reveal">
-                                        <div class="icon-wrapper">
-                                            <i class="im im-icon-Arrow-Over"></i>
-                                            <div class="process-number">1</div>
-                                        </div>
-                                    </div>
-                                    <div class="process-info">
-                                        <div class="step-number">1</div>
-                                        <div class="details">
-                                            <div class="motto">Think</div>
-                                            <p class="description">Lorem ipsum dolor sit amet, eam ex probo tation
-                                                tractatos. Ut vel hinc solet tincidunt, nec et iisque placerat pertinax.
-                                                Ei minim probatus mea.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Process step -->
-                            <div class="column is-4">
-                                <div class="process-block has-line">
-                                    <div class="process-icon is-icon-reveal">
-                                        <div class="icon-wrapper">
-                                            <i class="im im-icon-Arrow-Around"></i>
-                                            <div class="process-number">2</div>
-                                        </div>
-                                    </div>
-                                    <div class="process-info">
-                                        <div class="step-number">2</div>
-                                        <div class="details">
-                                            <div class="motto">Iterate</div>
-                                            <p class="description">Lorem ipsum dolor sit amet, eam ex probo tation
-                                                tractatos. Ut vel hinc solet tincidunt, nec et iisque placerat pertinax.
-                                                Ei minim probatus mea.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Process step -->
-                            <div class="column is-4">
-                                <div class="process-block">
-                                    <div class="process-icon is-icon-reveal">
-                                        <div class="icon-wrapper">
-                                            <i class="im im-icon-Arrow-Refresh"></i>
-                                            <div class="process-number">3</div>
-                                        </div>
-                                    </div>
-                                    <div class="process-info">
-                                        <div class="step-number">3</div>
-                                        <div class="details">
-                                            <div class="motto">Create</div>
-                                            <p class="description">Lorem ipsum dolor sit amet, eam ex probo tation
-                                                tractatos. Ut vel hinc solet tincidunt, nec et iisque placerat pertinax.
-                                                Ei minim probatus mea.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+        <div class="content-wrapper">
+            <!-- Counters -->
+            <div class="columns is-vcentered has-text-centered mt-40">
+                <div class="column is-4">
+                    <div class="parallax-counter is-primary">
+                        <div class="counter-icon">
+                            <i class="im im-icon-Address-Book2"></i>
                         </div>
+                        <div class="counter counter-number text-bold">126</div>
+                        <div class="counter-text">Completed projects</div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="parallax-counter is-primary">
+                        <div class="counter-icon">
+                            <i class="im im-icon-Code-Window"></i>
+                        </div>
+                        <div class="counter counter-number text-bold">978</div>
+                        <div class="counter-text">Commits pushed</div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="parallax-counter is-primary">
+                        <div class="counter-icon">
+                            <i class="im im-icon-Laughing"></i>
+                        </div>
+                        <div class="counter counter-number text-bold">95</div>
+                        <div class="counter-text">Satisfied clients</div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
 
-            <!-- Counters section -->
-            <div class="section is-medium parallax is-cover is-relative"
-                 data-background="https://via.placeholder.com/1920x1080" data-color="#000" data-color-opacity="0.7"
-                 data-demo-background="assets/img/demo/hero-8.jpg">
-                <div class="container">
-                    <div class="centered-title is-inverted">
-                        <h2>Work with us !</h2>
-                        <div class="subheading">
-                            We do everything to satisfy our clients. Let's start a new story together.
+<div class="section is-medium is-app-grey">
+    <div class="container">
+
+        <!-- Title -->
+        <div class="centered-title">
+            <h2>Meet the Team</h2>
+        </div>
+
+        <!-- Wrapper -->
+        <div class="content-wrapper">
+            <div class="columns is-multiline">
+
+                <!--User-->
+                <div class="column is-3">
+                    <div class="rounded-team-member">
+                        <div class="avatar-wrap">
+                            <img class="avatar" src="https://via.placeholder.com/250x250" alt="" data-demo-src="assets/img/avatars/helen.jpg">
+                            <img class="badge" src="{{ asset('assets/img/logos/stacks/vuejs.svg') }}" alt="">
                         </div>
-                    </div>
-
-                    <div class="content-wrapper">
-                        <!-- Counters -->
-                        <div class="columns is-vcentered has-text-centered mt-40">
-                            <div class="column is-4">
-                                <div class="parallax-counter is-primary">
-                                    <div class="counter-icon">
-                                        <i class="im im-icon-Address-Book2"></i>
-                                    </div>
-                                    <div class="counter counter-number text-bold">126</div>
-                                    <div class="counter-text">Completed projects</div>
-                                </div>
-                            </div>
-                            <div class="column is-4">
-                                <div class="parallax-counter is-primary">
-                                    <div class="counter-icon">
-                                        <i class="im im-icon-Code-Window"></i>
-                                    </div>
-                                    <div class="counter counter-number text-bold">978</div>
-                                    <div class="counter-text">Commits pushed</div>
-                                </div>
-                            </div>
-                            <div class="column is-4">
-                                <div class="parallax-counter is-primary">
-                                    <div class="counter-icon">
-                                        <i class="im im-icon-Laughing"></i>
-                                    </div>
-                                    <div class="counter counter-number text-bold">95</div>
-                                    <div class="counter-text">Satisfied clients</div>
-                                </div>
-                            </div>
+                        <h3>Helen Miller</h3>
+                        <p>Web Developer, Los Angeles</p>
+                        <div class="social-profiles">
+                            <a><i class="fa fa-facebook-f"></i></a>
+                            <a><i class="fa fa-linkedin-in"></i></a>
+                            <a><i class="fa fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="section is-medium is-app-grey">
-                <div class="container">
-
-                    <!-- Title -->
-                    <div class="centered-title">
-                        <h2>Meet the Team</h2>
-                    </div>
-
-                    <!-- Wrapper -->
-                    <div class="content-wrapper">
-                        <div class="columns is-multiline">
-
-                            <!--User-->
-                            <div class="column is-3">
-                                <div class="rounded-team-member">
-                                    <div class="avatar-wrap">
-                                        <img class="avatar" src="https://via.placeholder.com/250x250" alt=""
-                                             data-demo-src="assets/img/avatars/helen.jpg">
-                                        <img class="badge" src="assets/img/logos/stacks/vuejs.svg" alt="">
-                                    </div>
-                                    <h3>Helen Miller</h3>
-                                    <p>Web Developer, Los Angeles</p>
-                                    <div class="social-profiles">
-                                        <a><i class="fa fa-facebook-f"></i></a>
-                                        <a><i class="fa fa-linkedin-in"></i></a>
-                                        <a><i class="fa fa-twitter"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--User-->
-                            <div class="column is-3">
-                                <div class="rounded-team-member">
-                                    <div class="avatar-wrap">
-                                        <img class="avatar" src="https://via.placeholder.com/250x250" alt=""
-                                             data-demo-src="assets/img/avatars/nick.jpg">
-                                        <img class="badge" src="assets/img/logos/stacks/js.svg" alt="">
-                                    </div>
-                                    <h3>Nick Motta</h3>
-                                    <p>Frontend Developer, Seattle</p>
-                                    <div class="social-profiles">
-                                        <a><i class="fa fa-facebook-f"></i></a>
-                                        <a><i class="fa fa-linkedin-in"></i></a>
-                                        <a><i class="fa fa-twitter"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--User-->
-                            <div class="column is-3">
-                                <div class="rounded-team-member">
-                                    <div class="avatar-wrap">
-                                        <img class="avatar" src="https://via.placeholder.com/250x250" alt=""
-                                             data-demo-src="assets/img/avatars/lakisha.jpg">
-                                        <img class="badge" src="assets/img/logos/stacks/csharp.svg" alt="">
-                                    </div>
-                                    <h3>Lakisha Williams</h3>
-                                    <p>Backend Developer, Houston</p>
-                                    <div class="social-profiles">
-                                        <a><i class="fa fa-facebook-f"></i></a>
-                                        <a><i class="fa fa-linkedin-in"></i></a>
-                                        <a><i class="fa fa-twitter"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--User-->
-                            <div class="column is-3">
-                                <div class="rounded-team-member">
-                                    <div class="avatar-wrap">
-                                        <img class="avatar" src="https://via.placeholder.com/250x250" alt=""
-                                             data-demo-src="assets/img/avatars/alex.jpg">
-                                        <img class="badge" src="assets/img/logos/stacks/reactjs.svg" alt="">
-                                    </div>
-                                    <h3>Alex Walsh</h3>
-                                    <p>Fullstack Developer, DC</p>
-                                    <div class="social-profiles">
-                                        <a><i class="fa fa-facebook-f"></i></a>
-                                        <a><i class="fa fa-linkedin-in"></i></a>
-                                        <a><i class="fa fa-twitter"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--User-->
-                            <div class="column is-3">
-                                <div class="rounded-team-member">
-                                    <div class="avatar-wrap">
-                                        <img class="avatar" src="https://via.placeholder.com/250x250" alt=""
-                                             data-demo-src="assets/img/avatars/carolin.png">
-                                        <img class="badge" src="assets/img/logos/stacks/html5.svg" alt="">
-                                    </div>
-                                    <h3>Marjory Cambell</h3>
-                                    <p>UI/UX Designer, Miami</p>
-                                    <div class="social-profiles">
-                                        <a><i class="fa fa-facebook-f"></i></a>
-                                        <a><i class="fa fa-linkedin-in"></i></a>
-                                        <a><i class="fa fa-twitter"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--User-->
-                            <div class="column is-3">
-                                <div class="rounded-team-member">
-                                    <div class="avatar-wrap">
-                                        <img class="avatar" src="https://via.placeholder.com/250x250" alt=""
-                                             data-demo-src="assets/img/avatars/elie.jpg">
-                                        <img class="badge" src="assets/img/logos/stacks/css3.svg" alt="">
-                                    </div>
-                                    <h3>Elie Daniels</h3>
-                                    <p>UI/UX Designer, San Diego</p>
-                                    <div class="social-profiles">
-                                        <a><i class="fa fa-facebook-f"></i></a>
-                                        <a><i class="fa fa-linkedin-in"></i></a>
-                                        <a><i class="fa fa-twitter"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--User-->
-                            <div class="column is-3">
-                                <div class="rounded-team-member">
-                                    <div class="avatar-wrap">
-                                        <img class="avatar" src="https://via.placeholder.com/250x250" alt=""
-                                             data-demo-src="assets/img/avatars/ben.jpg">
-                                        <img class="badge" src="assets/img/logos/stacks/angular.svg" alt="">
-                                    </div>
-                                    <h3>Ben Smith</h3>
-                                    <p>Frontend Developer, San Diego</p>
-                                    <div class="social-profiles">
-                                        <a><i class="fa fa-facebook-f"></i></a>
-                                        <a><i class="fa fa-linkedin-in"></i></a>
-                                        <a><i class="fa fa-twitter"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--User-->
-                            <div class="column is-3">
-                                <div class="rounded-team-member">
-                                    <div class="avatar-wrap">
-                                        <img class="avatar" src="https://via.placeholder.com/250x250" alt=""
-                                             data-demo-src="assets/img/avatars/anthony.jpg">
-                                        <img class="badge" src="assets/img/logos/stacks/laravel.svg" alt="">
-                                    </div>
-                                    <h3>Anthony Briggs</h3>
-                                    <p>Backend Developer, New York</p>
-                                    <div class="social-profiles">
-                                        <a><i class="fa fa-facebook-f"></i></a>
-                                        <a><i class="fa fa-linkedin-in"></i></a>
-                                        <a><i class="fa fa-twitter"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-
+                <!--User-->
+                <div class="column is-3">
+                    <div class="rounded-team-member">
+                        <div class="avatar-wrap">
+                            <img class="avatar" src="https://via.placeholder.com/250x250" alt="" data-demo-src="assets/img/avatars/nick.jpg">
+                            <img class="badge" src="{{ asset('assets/img/logos/stacks/js.svg') }}" alt="">
                         </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Clients grid -->
-            <div id="trust" class="section is-medium">
-                <div class="container">
-                    <!-- Title -->
-                    <div class="section-title-wrapper">
-                        <div class="bg-number"><i class="material-icons">domain</i></div>
-                        <h2 class="section-title-landing has-text-centered dark-text"> We build Trust.</h2>
-                        <h4 class="has-text-centered">More than <b>900 Teams</b> use our product.</h4>
-                    </div>
-                    <!-- Grid -->
-                    <div class="content-wrapper">
-                        <div class="grid-clients five-grid">
-                            <div class="columns is-vcentered">
-                                <div class="column is-hidden-mobile"></div>
-                                <!-- Client -->
-                                <div class="column">
-                                    <a><img class="client" src="assets/img/logos/custom/gutwork.svg" alt=""></a>
-                                </div>
-                                <!-- Client -->
-                                <div class="column">
-                                    <a><img class="client" src="assets/img/logos/custom/phasekit.svg" alt=""></a>
-                                </div>
-                                <!-- Client -->
-                                <div class="column">
-                                    <a><img class="client" src="assets/img/logos/custom/grubspot.svg" alt=""></a>
-                                </div>
-                                <!-- Client -->
-                                <div class="column">
-                                    <a><img class="client" src="assets/img/logos/custom/taskbot.svg" alt=""></a>
-                                </div>
-                                <!-- Client -->
-                                <div class="column">
-                                    <a><img class="client" src="assets/img/logos/custom/systek.svg" alt=""></a>
-                                </div>
-                                <div class="column is-hidden-mobile"></div>
-                            </div>
-                            <div class="columns is-vcentered is-separator">
-                                <div class="column is-hidden-mobile"></div>
-                                <!-- Client -->
-                                <div class="column">
-                                    <a><img class="client" src="assets/img/logos/custom/infinite.svg" alt=""></a>
-                                </div>
-                                <!-- Client -->
-                                <div class="column">
-                                    <a><img class="client" src="assets/img/logos/custom/tribe.svg" alt=""></a>
-                                </div>
-                                <!-- Client -->
-                                <div class="column">
-                                    <a><img class="client" src="assets/img/logos/custom/powerball.svg" alt=""></a>
-                                </div>
-                                <!-- Client -->
-                                <div class="column">
-                                    <a><img class="client" src="assets/img/logos/custom/kromo.svg" alt=""></a>
-                                </div>
-                                <!-- Client -->
-                                <div class="column">
-                                    <a><img class="client" src="assets/img/logos/custom/covenant.svg" alt=""></a>
-                                </div>
-                                <div class="column is-hidden-mobile"></div>
-                            </div>
-                            <div class="columns is-vcentered is-separator">
-                                <div class="column is-hidden-mobile"></div>
-                                <!-- Client -->
-                                <div class="column">
-                                    <a><img class="client" src="assets/img/logos/custom/bitbreaker.svg" alt=""></a>
-                                </div>
-                                <!-- Client -->
-                                <div class="column">
-                                    <a><img class="client" src="assets/img/logos/custom/evently.svg" alt=""></a>
-                                </div>
-                                <!-- Client -->
-                                <div class="column">
-                                    <a><img class="client" src="assets/img/logos/custom/proactive.svg" alt=""></a>
-                                </div>
-                                <!-- Client -->
-                                <div class="column">
-                                    <a><img class="client" src="assets/img/logos/custom/transfuseio.svg" alt=""></a>
-                                </div>
-                                <!-- Client -->
-                                <div class="column">
-                                    <a><img class="client" src="assets/img/logos/custom/livetalk.svg" alt=""></a>
-                                </div>
-                                <div class="column is-hidden-mobile"></div>
-                            </div>
-                        </div>
-                        <!-- CTA -->
-                        <div class="has-text-centered is-title-reveal pt-40 pb-40">
-                            <a href="#" class="button button-cta btn-align primary-btn is-bold raised">Get
-                                started Now</a>
+                        <h3>Nick Motta</h3>
+                        <p>Frontend Developer, Seattle</p>
+                        <div class="social-profiles">
+                            <a><i class="fa fa-facebook-f"></i></a>
+                            <a><i class="fa fa-linkedin-in"></i></a>
+                            <a><i class="fa fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
+
+                <!--User-->
+                <div class="column is-3">
+                    <div class="rounded-team-member">
+                        <div class="avatar-wrap">
+                            <img class="avatar" src="https://via.placeholder.com/250x250" alt="" data-demo-src="assets/img/avatars/lakisha.jpg">
+                            <img class="badge" src="{{ asset('assets/img/logos/stacks/csharp.svg') }}" alt="">
+                        </div>
+                        <h3>Lakisha Williams</h3>
+                        <p>Backend Developer, Houston</p>
+                        <div class="social-profiles">
+                            <a><i class="fa fa-facebook-f"></i></a>
+                            <a><i class="fa fa-linkedin-in"></i></a>
+                            <a><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--User-->
+                <div class="column is-3">
+                    <div class="rounded-team-member">
+                        <div class="avatar-wrap">
+                            <img class="avatar" src="https://via.placeholder.com/250x250" alt="" data-demo-src="assets/img/avatars/alex.jpg">
+                            <img class="badge" src="{{ asset('assets/img/logos/stacks/reactjs.svg') }}" alt="">
+                        </div>
+                        <h3>Alex Walsh</h3>
+                        <p>Fullstack Developer, DC</p>
+                        <div class="social-profiles">
+                            <a><i class="fa fa-facebook-f"></i></a>
+                            <a><i class="fa fa-linkedin-in"></i></a>
+                            <a><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--User-->
+                <div class="column is-3">
+                    <div class="rounded-team-member">
+                        <div class="avatar-wrap">
+                            <img class="avatar" src="https://via.placeholder.com/250x250" alt="" data-demo-src="assets/img/avatars/carolin.png">
+                            <img class="badge" src="{{ asset('assets/img/logos/stacks/html5.svg') }}" alt="">
+                        </div>
+                        <h3>Marjory Cambell</h3>
+                        <p>UI/UX Designer, Miami</p>
+                        <div class="social-profiles">
+                            <a><i class="fa fa-facebook-f"></i></a>
+                            <a><i class="fa fa-linkedin-in"></i></a>
+                            <a><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--User-->
+                <div class="column is-3">
+                    <div class="rounded-team-member">
+                        <div class="avatar-wrap">
+                            <img class="avatar" src="https://via.placeholder.com/250x250" alt="" data-demo-src="assets/img/avatars/elie.jpg">
+                            <img class="badge" src="{{ asset('assets/img/logos/stacks/css3.svg') }}" alt="">
+                        </div>
+                        <h3>Elie Daniels</h3>
+                        <p>UI/UX Designer, San Diego</p>
+                        <div class="social-profiles">
+                            <a><i class="fa fa-facebook-f"></i></a>
+                            <a><i class="fa fa-linkedin-in"></i></a>
+                            <a><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--User-->
+                <div class="column is-3">
+                    <div class="rounded-team-member">
+                        <div class="avatar-wrap">
+                            <img class="avatar" src="https://via.placeholder.com/250x250" alt="" data-demo-src="assets/img/avatars/ben.jpg">
+                            <img class="badge" src="{{ asset('assets/img/logos/stacks/angular.svg') }}" alt="">
+                        </div>
+                        <h3>Ben Smith</h3>
+                        <p>Frontend Developer, San Diego</p>
+                        <div class="social-profiles">
+                            <a><i class="fa fa-facebook-f"></i></a>
+                            <a><i class="fa fa-linkedin-in"></i></a>
+                            <a><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--User-->
+                <div class="column is-3">
+                    <div class="rounded-team-member">
+                        <div class="avatar-wrap">
+                            <img class="avatar" src="https://via.placeholder.com/250x250" alt="" data-demo-src="assets/img/avatars/anthony.jpg">
+                            <img class="badge" src="{{ asset('assets/img/logos/stacks/laravel.svg') }}" alt="">
+                        </div>
+                        <h3>Anthony Briggs</h3>
+                        <p>Backend Developer, New York</p>
+                        <div class="social-profiles">
+                            <a><i class="fa fa-facebook-f"></i></a>
+                            <a><i class="fa fa-linkedin-in"></i></a>
+                            <a><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-@endsection
+        </div>
+
+    </div>
+</div>
+
+<!-- Clients grid -->
+<div id="trust" class="section is-medium">
+    <div class="container">
+        <!-- Title -->
+        <div class="section-title-wrapper">
+            <div class="bg-number"><i class="material-icons">domain</i></div>
+            <h2 class="section-title-landing has-text-centered dark-text"> We build Trust.</h2>
+            <h4 class="has-text-centered">More than <b>900 Teams</b> use our product.</h4>
+        </div>
+        <!-- Grid -->
+        <div class="content-wrapper">
+            <div class="grid-clients five-grid">
+                <div class="columns is-vcentered">
+                    <div class="column is-hidden-mobile"></div>
+                    <!-- Client -->
+                    <div class="column">
+                        <a><img class="client" src="{{ asset('assets/img/logos/custom/gutwork.svg') }}" alt=""></a>
+                    </div>
+                    <!-- Client -->
+                    <div class="column">
+                        <a><img class="client" src="{{ asset('assets/img/logos/custom/phasekit.svg') }}" alt=""></a>
+                    </div>
+                    <!-- Client -->
+                    <div class="column">
+                        <a><img class="client" src="{{ asset('assets/img/logos/custom/grubspot.svg') }}" alt=""></a>
+                    </div>
+                    <!-- Client -->
+                    <div class="column">
+                        <a><img class="client" src="{{ asset('assets/img/logos/custom/taskbot.svg') }}" alt=""></a>
+                    </div>
+                    <!-- Client -->
+                    <div class="column">
+                        <a><img class="client" src="{{ asset('assets/img/logos/custom/systek.svg') }}" alt=""></a>
+                    </div>
+                    <div class="column is-hidden-mobile"></div>
+                </div>
+                <div class="columns is-vcentered is-separator">
+                    <div class="column is-hidden-mobile"></div>
+                    <!-- Client -->
+                    <div class="column">
+                        <a><img class="client" src="{{ asset('assets/img/logos/custom/infinite.svg') }}" alt=""></a>
+                    </div>
+                    <!-- Client -->
+                    <div class="column">
+                        <a><img class="client" src="{{ asset('assets/img/logos/custom/tribe.svg') }}" alt=""></a>
+                    </div>
+                    <!-- Client -->
+                    <div class="column">
+                        <a><img class="client" src="{{ asset('assets/img/logos/custom/powerball.svg') }}" alt=""></a>
+                    </div>
+                    <!-- Client -->
+                    <div class="column">
+                        <a><img class="client" src="{{ asset('assets/img/logos/custom/kromo.svg') }}" alt=""></a>
+                    </div>
+                    <!-- Client -->
+                    <div class="column">
+                        <a><img class="client" src="{{ asset('assets/img/logos/custom/covenant.svg') }}" alt=""></a>
+                    </div>
+                    <div class="column is-hidden-mobile"></div>
+                </div>
+                <div class="columns is-vcentered is-separator">
+                    <div class="column is-hidden-mobile"></div>
+                    <!-- Client -->
+                    <div class="column">
+                        <a><img class="client" src="{{ asset('assets/img/logos/custom/bitbreaker.svg') }}" alt=""></a>
+                    </div>
+                    <!-- Client -->
+                    <div class="column">
+                        <a><img class="client" src="{{ asset('assets/img/logos/custom/evently.svg') }}" alt=""></a>
+                    </div>
+                    <!-- Client -->
+                    <div class="column">
+                        <a><img class="client" src="{{ asset('assets/img/logos/custom/proactive.svg') }}" alt=""></a>
+                    </div>
+                    <!-- Client -->
+                    <div class="column">
+                        <a><img class="client" src="{{ asset('assets/img/logos/custom/transfuseio.svg') }}" alt=""></a>
+                    </div>
+                    <!-- Client -->
+                    <div class="column">
+                        <a><img class="client" src="{{ asset('assets/img/logos/custom/livetalk.svg') }}" alt=""></a>
+                    </div>
+                    <div class="column is-hidden-mobile"></div>
+                </div>
+            </div>
+            <!-- CTA -->
+            <div class="has-text-centered is-title-reveal pt-40 pb-40">
+                <a href="#" class="button button-cta btn-align primary-btn is-bold raised">Get
+                    started Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer-light-medium is-white">
+    <div class="container">
+        <div class="footer-head">
+            <div class="head-text">
+                <h3>Ready to get started?</h3>
+                <p>Create your free account now</p>
+            </div>
+            <div class="head-action">
+                <div class="buttons">
+                    <a class="button primary-btn raised action-button is-bold">Try it free</a>
+                    <a class="button chat-button">Chat with us</a>
+                </div>
+            </div>
+        </div>
+        <div class="columns footer-body">
+            <!-- Column -->
+            <div class="column is-4">
+                <div class="pt-10 pb-10">
+                    <img class="small-footer-logo" src="{{ asset('assets/img/logos/bulkit-logo-g.png') }}" alt="">
+                    <div class="footer-description">
+                        Bulkit is built for developers and designers. It's modular approach lets you create an original
+                        landing page for your brand.
+                    </div>
+                </div>
+                <div>
+                        <span class="moto">Designed and coded with <i class="fa fa-heart color-red"></i> by CSS
+                            Ninja.</span>
+                    <div class="social-links">
+                        <a href="#">
+                            <span class="icon"><i class="fa fa-facebook"></i></span>
+                        </a>
+                        <a href="#">
+                            <span class="icon"><i class="fa fa-twitter"></i></span>
+                        </a>
+                        <a href="#">
+                            <span class="icon"><i class="fa fa-linkedin"></i></span>
+                        </a>
+                        <a href="#">
+                            <span class="icon"><i class="fa fa-dribbble"></i></span>
+                        </a>
+                        <a href="#">
+                            <span class="icon"><i class="fa fa-github"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+            <div class="column is-6 is-offset-2">
+                <div class="columns">
+                    <!-- Column -->
+                    <div class="column">
+                        <ul class="footer-column">
+                            <li class="column-header">
+                                Bulkit
+                            </li>
+                            <li class="column-item"><a href="#">Home</a></li>
+                            <li class="column-item"><a href="#">Pricing</a></li>
+                            <li class="column-item"><a href="#">Get started</a></li>
+                            <li class="column-item"><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column -->
+                    <div class="column">
+                        <ul class="footer-column">
+                            <li class="column-header">
+                                Ressources
+                            </li>
+                            <li class="column-item"><a href="#">Learning</a></li>
+                            <li class="column-item"><a href="#">Support center</a></li>
+                            <li class="column-item"><a href="#">Frequent questions</a></li>
+                            <li class="column-item"><a href="#">Schedule a demo</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column -->
+                    <div class="column">
+                        <ul class="footer-column">
+                            <li class="column-header">
+                                Terms
+                            </li>
+                            <li class="column-item"><a href="#">Terms of Service</a></li>
+                            <li class="column-item"><a href="#">Privacy policy</a></li>
+                            <li class="column-item"><a href="#">SaaS services</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright has-text-centered">
+            <p>&copy; 2019-2020 | <a href="https://cssninja.io">Css Ninja</a> | All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+<!-- Back To Top Button -->
+<div id="backtotop"><a href="#"></a></div>
+<div id="style-switcher" class="style-switcher visible">
+    <div class="switcher-close">
+        <i class="material-icons">close</i>
+    </div>
+    <!--Main Theme-->
+    <div class="style-dot">
+        <input type="radio" id="core" name="theme_selector" checked>
+        <div class="style-dot-inner"></div>
+    </div>
+    <!--Main Theme-->
+    <div class="style-dot">
+        <input type="radio" id="purple" name="theme_selector">
+        <div class="style-dot-inner is-purple"></div>
+    </div>
+    <!--Main Theme-->
+    <div class="style-dot">
+        <input type="radio" id="teal" name="theme_selector">
+        <div class="style-dot-inner is-teal"></div>
+    </div>
+    <!--Main Theme-->
+    <div class="style-dot">
+        <input type="radio" id="green" name="theme_selector">
+        <div class="style-dot-inner is-green"></div>
+    </div>
+
+    <!--Main Theme-->
+    <div class="style-dot">
+        <input type="radio" id="azur" name="theme_selector">
+        <div class="style-dot-inner is-azur"></div>
+    </div>
+    <!--Main Theme-->
+    <div class="style-dot">
+        <input type="radio" id="blue" name="theme_selector">
+        <div class="style-dot-inner is-blue"></div>
+    </div>
+    <!--Main Theme-->
+    <div class="style-dot">
+        <input type="radio" id="night" name="theme_selector">
+        <div class="style-dot-inner is-night"></div>
+    </div>
+    <!--Main Theme-->
+    <div class="style-dot">
+        <input type="radio" id="yellow" name="theme_selector">
+        <div class="style-dot-inner is-yellow"></div>
+    </div>
+    <!--Main Theme-->
+    <div class="style-dot">
+        <input type="radio" id="orange" name="theme_selector">
+        <div class="style-dot-inner is-orange"></div>
+    </div>
+    <!--Main Theme-->
+    <div class="style-dot">
+        <input type="radio" id="red" name="theme_selector">
+        <div class="style-dot-inner is-red"></div>
+    </div>
+</div> <!-- Bulchat Button -->
+<div id="bulchat" class="open">
+    <div class="chat-button open g-item"></div>
+</div> <!-- Chat widget -->
+<div id="chat-widget">
+    <div class="chat-widget-body is-closed">
+        <div class="chat-header">
+            <div class="close-chat is-hidden-desktop is-hidden-tablet"><img src="{{ asset('assets/img/graphics/legacy/close-small.svg') }}" alt=""></div>
+            <div class="chat-team">
+                <div class="team-member has-text-centered">
+                    <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="assets/img/avatars/alan.jpg">
+                    <div class="is-handwritten">Alan maynard</div>
+                </div>
+            </div>
+            <div class="response-delay has-text-centered">
+                Answers in less than 18 hours
+            </div>
+        </div>
+        <div class="message-container">
+            <div class="divider">
+                <span class="before-divider"></span>
+                <div class="children">Today</div>
+                <span class="after-divider"></span>
+            </div>
+            <div class="chat-message from">
+                <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="assets/img/avatars/alan.jpg">
+                <div class="bubble-wrapper">
+                    <div class="timestamp">02:49 pm</div>
+                    <div class="chat-bubble">
+                        Hey iam Alan ! Iam here to help. What can i do for you ?
+                    </div>
+                </div>
+            </div>
+            <div class="chat-message to">
+                <div class="bubble-wrapper">
+                    <div class="timestamp">02:48 pm</div>
+                    <div class="chat-bubble">
+                        Hello, someone out there ? I could use some help
+                    </div>
+                </div>
+                <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="assets/img/avatars/helen.jpg">
+            </div>
+        </div>
+        <div class="message-input">
+            <textarea class="" rows="1" placeholder="Send a message ..."></textarea>
+            <div class="message-options">
+                <div class="emoji-button"></div>
+                <div class="attach-button"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Chat widget -->
+<!-- Concatenated jQuery and plugins -->
+<script src="{{ asset('assets/js/app.js') }}"></script>
+
+<!-- Bulkit js -->
+<script src="{{ asset('assets/js/functions.js') }}"></script>
+<script src="{{ asset('assets/js/auth.js') }}"></script>
+<script src="{{ asset('assets/js/contact.js') }}"></script>
+<script src="{{ asset('assets/js/main.js') }}"></script>
+
+<!-- Landing page js -->
+</body>
+
+</html>
