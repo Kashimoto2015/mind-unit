@@ -1,3 +1,4 @@
+@extends('layouts.app')
 @section('hero')
 <div class="login-wrapper columns is-gapless">
 @endsection
