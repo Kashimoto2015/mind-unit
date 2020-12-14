@@ -22,3 +22,7 @@ Route::get('/products', [\App\Http\Controllers\ServiceController::class, 'index'
 Route::get('/about-us', function(){return view('about-us');});
 
 Route::get('/products/{index}', [\App\Http\Controllers\ServiceController::class, 'category']);
+
+Route::get('/impressum', function(){return view('rechtliches.impressum');});
+
+Route::get('/datenschutz', function(){return view('rechtliches.datenschutz');});
