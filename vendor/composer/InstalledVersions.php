@@ -14,12 +14,12 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => 'c8a76e342d9366ff693237363761a5a2e2a6a2a6',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -453,12 +453,12 @@ private static $installed = array (
     ),
     'laravel/laravel' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => 'c8a76e342d9366ff693237363761a5a2e2a6a2a6',
     ),
     'laravel/tinker' => 
     array (
@@ -477,6 +477,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '444072cb2f8baaa15172c5cde2bd30d188c3b7e7',
+    ),
+    'laravelcollective/html' => 
+    array (
+      'pretty_version' => 'v6.2.0',
+      'version' => '6.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3bb99be7502feb2129b375cd026ccb0fa4b66628',
     ),
     'league/commonmark' => 
     array (

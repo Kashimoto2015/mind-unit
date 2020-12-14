@@ -22,4 +22,8 @@ class ServiceController extends Controller
             return redirect('/products');
     }
 
+    public function addToCart(Request $request){
+
+    }
+
 }

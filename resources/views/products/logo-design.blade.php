@@ -215,7 +215,10 @@
                                     <a href="/login" class="button is-fullwidth">Anmelden</a>
                                 @endguest
                                 @auth
-                                    <a href="#" class="button is-fullwidth">In den Warenkorb legen</a>
+                                    {!! Form::open(['url' => '/products', 'method' => 'post']) !!}
+                                        {{ Form::hidden('id', '1') }}
+                                        {{ Form::submit('In den Warenkorb legen', ['class' => 'button is-fullwidth']) }}
+                                    {!! Form::close() !!}
                                 @endauth
                             </div>
                         </div>
@@ -238,7 +241,10 @@
                                     <a href="/login" class="button is-fullwidth">Anmelden</a>
                                 @endguest
                                 @auth
-                                    <a href="#" class="button is-fullwidth">In den Warenkorb legen</a>
+                                    {!! Form::open(['url' => '/products', 'method' => 'post']) !!}
+                                        {{ Form::hidden('id', '2') }}
+                                        {{ Form::submit('In den Warenkorb legen', ['class' => 'button is-fullwidth']) }}
+                                    {!! Form::close() !!}
                                 @endauth
                             </div>
                         </div>
@@ -261,7 +267,10 @@
                                     <a href="/login" class="button is-fullwidth">Anmelden</a>
                                 @endguest
                                 @auth
-                                    <a href="#" class="button is-fullwidth">In den Warenkorb legen</a>
+                                    {!! Form::open(['url' => '/products', 'method' => 'post']) !!}
+                                        {{ Form::hidden('id', '3') }}
+                                        {{ Form::submit('In den Warenkorb legen', ['class' => 'button is-fullwidth']) }}
+                                    {!! Form::close() !!}
                                 @endauth
                             </div>
                         </div>
@@ -284,7 +293,10 @@
                                     <a href="/login" class="button is-fullwidth">Anmelden</a>
                                 @endguest
                                 @auth
-                                    <a href="#" class="button is-fullwidth">In den Warenkorb legen</a>
+                                    {!! Form::open(['url' => '/products', 'method' => 'post']) !!}
+                                        {{ Form::hidden('id', '4') }}
+                                        {{ Form::submit('In den Warenkorb legen', ['class' => 'button is-fullwidth']) }}
+                                    {!! Form::close() !!}
                                 @endauth
                             </div>
                         </div>
