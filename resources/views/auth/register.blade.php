@@ -63,7 +63,7 @@
                                     </div>
                                     <div class="field pb-10">
                                         <div class="control has-icons-right">
-                                            <input id="email" name="name" class="input is-medium has-shadow @error('email') is-invalid @enderror" type="text" placeholder="Email Adresse">
+                                            <input id="email" name="email" class="input is-medium has-shadow @error('email') is-invalid @enderror" type="text" placeholder="Email Adresse">
                                             <span class="icon is-medium is-right">
                                                         <i class="sl sl-icon-envelope-open"></i>
                                                     </span>
@@ -76,7 +76,7 @@
                                     </div>
                                     <div class="field pb-10">
                                         <div class="control has-icons-right">
-                                            <input class="input is-medium has-shadow @error('password') is-invalid @enderror" type="password" placeholder="Passwort">
+                                            <input id="password" name="password" class="input is-medium has-shadow @error('password') is-invalid @enderror" type="password" placeholder="Passwort">
                                             <span class="icon is-medium is-right">
                                                         <i class="sl sl-icon-lock"></i>
                                                     </span>
