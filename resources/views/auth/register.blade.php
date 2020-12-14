@@ -1,8 +1,27 @@
-@extends('layouts.app')
-@section('hero')
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title> Bulkit :: Sign up</title>
+    <link rel="icon" type="image/png" href="{{ asset('assets/img/favicon.png') }}" />
+
+    <!--Core CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('assets/css/bulma.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/night.css') }}">
+</head>
+
+<body>
+<div class="pageloader"></div>
+<div class="infraloader is-active"></div>
+<!-- Wrapper -->
 <div class="login-wrapper columns is-gapless">
-@endsection
-@section('content')
     <!-- Form section -->
     <div class="column is-5">
         <div class="hero is-fullheight">
@@ -112,4 +131,19 @@
         </div>
     </div>
     <!-- /Image section -->
-@endsection
+</div>
+<!-- /Side navigation -->
+<!-- Back To Top Button -->
+<div id="backtotop"><a href="#"></a></div> <!-- Concatenated jQuery and plugins -->
+<script src="{{ asset('assets/js/app.js') }}"></script>
+
+<!-- Bulkit js -->
+<script src="{{ asset('assets/js/functions.js') }}"></script>
+<script src="{{ asset('assets/js/auth.js') }}"></script>
+<script src="{{ asset('assets/js/contact.js') }}"></script>
+<script src="{{ asset('assets/js/main.js') }}"></script>
+
+<!-- Landing page js -->
+</body>
+
+</html>
