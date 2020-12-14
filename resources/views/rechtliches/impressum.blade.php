@@ -37,7 +37,7 @@
             </div>
     </div>
     <!-- FAQ -->
-    <div class="section is-medium section-feature-grey">
+    <div class="section is-medium is-transparent">
         <div class="container">
 
             <h2 class="title section-subtitle dark-text text-bold has-text-centered is-3 pt-20 pb-20">
