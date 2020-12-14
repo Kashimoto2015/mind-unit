@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Item;
 use Illuminate\Http\Request;
 
 class ServiceController extends Controller
@@ -23,7 +24,14 @@ class ServiceController extends Controller
     }
 
     public function addToCart(Request $request){
-
+        $id = $request->input('id');
+        if (isset($id)) {
+            $item = new Item();
+            $item->user_id = auth()->user()->id;
+            $item->product_id = $id;
+            $item->save();
+        }
+        return redirect('/shoppingcart');
     }
 
 }

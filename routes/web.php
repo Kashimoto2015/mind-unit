@@ -28,3 +28,5 @@ Route::get('/products/{index}', [\App\Http\Controllers\ServiceController::class,
 Route::get('/impressum', function(){return view('rechtliches.impressum');});
 
 Route::get('/datenschutz', function(){return view('rechtliches.datenschutz');});
+
+Route::resource('/shoppingcart', 'App\Http\Controllers\ShoppingcartController');
