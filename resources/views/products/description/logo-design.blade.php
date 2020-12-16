@@ -190,27 +190,29 @@
             </div>
         </div>
     </div>
-    <!-- Material contact form -->
-    <div class="columns is-vcentered pb-60">
-        <div class="column is-4 is-offset-4">
-            <div class="flex-card light-bordered light-raised">
-                <div class="card-body">
-                    <form class="padding-20">
-                        <div class="control-material is-secondary">
-                            <textarea rows="5"></textarea>
-                            <span class="material-highlight"></span>
-                            <span class="bar"></span>
-                            <label>Message *</label>
-                        </div>
-                        <div class="column"></div>
-                        <div class="uploader-controls animated preFadeInUp fadeInUp">
-                            <input type="file" name="fielduploader">
-                        </div>
-                        <div class="column"></div>
-                        <div class="mt-20 has-text-right">
-                            <button type="submit" class="button btn-align button-cta no-lh is-bold secondary-btn raised">Submit</button>
-                        </div>
-                    </form>
+    <div class="section section-primary has-pseudo-lines z-index-0">
+        <!-- Material contact form -->
+        <div class="columns is-vcentered pb-60">
+            <div class="column is-4 is-offset-4">
+                <div class="flex-card light-bordered light-raised">
+                    <div class="card-body">
+                        <form class="padding-20">
+                            <div class="control-material is-secondary">
+                                <textarea rows="5"></textarea>
+                                <span class="material-highlight"></span>
+                                <span class="bar"></span>
+                                <label>Message *</label>
+                            </div>
+                            <div class="column"></div>
+                            <div class="uploader-controls animated preFadeInUp fadeInUp">
+                                <input type="file" name="fielduploader">
+                            </div>
+                            <div class="column"></div>
+                            <div class="mt-20 has-text-right">
+                                <button type="submit" class="button btn-align button-cta no-lh is-bold secondary-btn raised">Submit</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
