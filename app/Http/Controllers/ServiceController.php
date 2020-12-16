@@ -32,8 +32,12 @@ class ServiceController extends Controller
     }
 
     public function create($index){
-        if($index >= 1 && $index <= 4){
-            return view('products.description.logo-design')->with('index', $index);
+        if (Auth::check()) {
+            if ($index >= 1 && $index <= 4) {
+                return view('products.description.logo-design')->with('index', $index);
+            }
+        } else {
+            return redirect('/products');
         }
     }
 
