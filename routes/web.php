@@ -19,7 +19,7 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('in
 
 Route::get('/products', [\App\Http\Controllers\ServiceController::class, 'index']);
 
-Route::post('/products', [\App\Http\Controllers\ServiceController::class, 'addToCart']);
+Route::post('/products', [\App\Http\Controllers\ServiceController::class, 'redirectToDescription']);
 
 Route::get('/products/{index}', [\App\Http\Controllers\ServiceController::class, 'category']);
 

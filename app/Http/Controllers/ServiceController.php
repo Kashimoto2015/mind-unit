@@ -23,7 +23,7 @@ class ServiceController extends Controller
             return redirect('/products');
     }
 
-    public function addToCart(Request $request){
+    public function redirectToDescription(Request $request){
         $id = $request->input('id');
         if (isset($id))
             return redirect('/products/create/' . $id);
