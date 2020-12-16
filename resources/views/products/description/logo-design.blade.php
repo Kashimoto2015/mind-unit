@@ -203,11 +203,9 @@
                             <label>Message *</label>
                         </div>
                         <div class="column"></div>
-                        <div class="column is-5">
-                            <div id="uploader" class="section-wrapper">
-                                <div class="uploader-controls has-text-centered animated preFadeInUp fadeInUp">
-                                    <input type="file" name="dragndrop">
-                                </div>
+                        <div id="uploader" class="section-wrapper">
+                            <div class="uploader-controls has-text-centered animated preFadeInUp fadeInUp">
+                                <input type="file" name="dragndrop">
                             </div>
                         </div>
                         <div class="column"></div>
