@@ -196,9 +196,9 @@
             <div class="column is-4 is-offset-4">
                 <div class="flex-card light-bordered light-raised">
                     <div class="card-body">
-                        <form class="padding-20">
+                        {!! Form::open(['url' => '/products', 'method' => 'post', 'class' => 'padding-20', 'enctype' => 'multipart/form-data']) !!}
                             <div class="control-material is-secondary">
-                                <textarea rows="5"></textarea>
+                                {{ Form::textarea('description', '', ['rows' => '5']) }}
                                 <span class="material-highlight"></span>
                                 <span class="bar"></span>
                                 <label>Beschreibung deines Logo Designs *</label>
@@ -207,14 +207,14 @@
                             <h4>Beispieldesigns angeben</h4>
                             <div class="column"></div>
                             <div class="uploader-controls animated preFadeInUp fadeInUp">
-                                <input type="file" name="fielduploader">
+                                {{ Form::file('files', ['name' => 'fielduploader']) }}
                                 <label>Bitte nur .png oder .jpg hochladen</label>
                             </div>
                             <div class="column"></div>
                             <div class="mt-20 has-text-right">
-                                <button type="submit" class="button btn-align button-cta no-lh is-bold secondary-btn raised">Submit</button>
+                                {{ Form::submit('In den Warenkorb legen', ['class' => 'button btn-align button-cta no-lh is-bold secondary-btn raised']) }}
                             </div>
-                        </form>
+                        {!! Form::close() !!}
                     </div>
                 </div>
             </div>
