@@ -204,6 +204,8 @@
                                 <label>Beschreibung deines Logo Designs *</label>
                             </div>
                             <div class="column"></div>
+                            <h4>Beispieldesigns angeben</h4>
+                            <div class="column"></div>
                             <div class="uploader-controls animated preFadeInUp fadeInUp">
                                 <input type="file" name="fielduploader">
                                 <label>Bitte nur .png oder .jpg hochladen</label>
