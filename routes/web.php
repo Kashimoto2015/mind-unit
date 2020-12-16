@@ -21,9 +21,11 @@ Route::get('/products', [\App\Http\Controllers\ServiceController::class, 'index'
 
 Route::post('/products', [\App\Http\Controllers\ServiceController::class, 'addToCart']);
 
-Route::get('/about-us', function(){return view('about-us');});
-
 Route::get('/products/{index}', [\App\Http\Controllers\ServiceController::class, 'category']);
+
+Route::get('/products/create/{index}', [\App\Http\Controllers\ServiceController::class, 'create']);
+
+Route::get('/about-us', function(){return view('about-us');});
 
 Route::get('/impressum', function(){return view('rechtliches.impressum');});
 

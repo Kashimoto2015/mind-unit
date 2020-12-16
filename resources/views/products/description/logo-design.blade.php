@@ -180,127 +180,43 @@
 
                     <div class="column is-6 is-offset-3 is-hero-title has-text-centered">
                         <h1 class="title is-1 is-medium">
-                            Logo Design.
+                            Beschreibung.
                         </h1>
                         <h2 class="subtitle is-4">
-                            Suche dein perfektes Paket aus
+                            Beschreibe dein Logo und füge Beispiele hinzu
                         </h2>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Pricing V1-D -->
-    <div class="section section-primary has-pseudo-lines z-index-0">
-        <div class="container">
-            <div class="content-wrapper">
-                <div class="classic-pricing">
-                    <div class="pricing-table is-horizontal">
-                        <!-- Pricing Plan -->
-                        <div class="pricing-plan">
-                            <div class="plan-header">Starter</div>
-                            <div class="plan-items">
-                                <div class="plan-item"><b>Professionelles</b> Logo</div>
-                                <div class="plan-item"><b>PNG</b> Datei</div>
-                                <div class="plan-item">Verschiedene Farben</div>
-                                <div class="plan-item">Alle Rechte</div>
-                                <div class="plan-item"><b>3</b> Überarbeitungen</div>
-                                <div class="plan-item">-</div>
-                                <div class="plan-item">-</div>
-                                <div class="plan-item">-</div>
-                            </div>
-                            <div class="plan-footer">
-                                <div class="plan-price"><span class="plan-price-amount">14,99<span class="plan-price-currency">€</span></span></div>
-                                @guest
-                                    <a href="/login" class="button is-fullwidth">Anmelden</a>
-                                @endguest
-                                @auth
-                                    {!! Form::open(['url' => '/products', 'method' => 'post']) !!}
-                                        {{ Form::hidden('id', '1') }}
-                                        {{ Form::submit('In den Warenkorb legen', ['class' => 'button is-fullwidth']) }}
-                                    {!! Form::close() !!}
-                                @endauth
-                            </div>
+    <!-- Material contact form -->
+    <div class="columns is-vcentered pb-60">
+        <div class="column is-4 is-offset-4">
+            <div class="flex-card light-bordered light-raised">
+                <div class="card-body">
+                    <form class="padding-20">
+                        <div class="control-material is-secondary">
+                            <textarea rows="5"></textarea>
+                            <span class="material-highlight"></span>
+                            <span class="bar"></span>
+                            <label>Message *</label>
                         </div>
-                        <!-- Pricing Plan -->
-                        <div class="pricing-plan is-secondary">
-                            <div class="plan-header">Pro</div>
-                            <div class="plan-items">
-                                <div class="plan-item"><b>Professionelles</b> Logo</div>
-                                <div class="plan-item"><b>PNG & JPEG</b> Datei</div>
-                                <div class="plan-item">Verschiedene Farben</div>
-                                <div class="plan-item">Alle Rechte</div>
-                                <div class="plan-item"><b>5</b> Überarbeitungen</div>
-                                <div class="plan-item">-</div>
-                                <div class="plan-item">-</div>
-                                <div class="plan-item">-</div>
+                        <div class="columns is-vcentered pb-60">
+                            <div class="column"></div>
+                            <div class="column is-5">
+                                <div id="uploader" class="section-wrapper">
+                                    <div class="uploader-controls has-text-centered animated preFadeInUp fadeInUp">
+                                        <input type="file" name="dragndrop">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="plan-footer">
-                                <div class="plan-price"><span class="plan-price-amount">24,99<span class="plan-price-currency">€</span></span></div>
-                                @guest
-                                    <a href="/login" class="button is-fullwidth">Anmelden</a>
-                                @endguest
-                                @auth
-                                    {!! Form::open(['url' => '/products', 'method' => 'post']) !!}
-                                        {{ Form::hidden('id', '2') }}
-                                        {{ Form::submit('In den Warenkorb legen', ['class' => 'button is-fullwidth']) }}
-                                    {!! Form::close() !!}
-                                @endauth
-                            </div>
+                            <div class="column"></div>
                         </div>
-                        <!-- Pricing Plan -->
-                        <div class="pricing-plan is-primary is-active">
-                            <div class="plan-header">Business</div>
-                            <div class="plan-items">
-                                <div class="plan-item"><b>Professionelles</b> Logo</div>
-                                <div class="plan-item"><b>PNG & JPEG</b> Datei</div>
-                                <div class="plan-item">Verschiedene Farben</div>
-                                <div class="plan-item">Alle Rechte</div>
-                                <div class="plan-item"><b>7</b> Überarbeitungen</div>
-                                <div class="plan-item"><b>Vector</b> Dateien</div>
-                                <div class="plan-item">-</div>
-                                <div class="plan-item">-</div>
-                            </div>
-                            <div class="plan-footer">
-                                <div class="plan-price"><span class="plan-price-amount">32,99<span class="plan-price-currency">€</span></span></div>
-                                @guest
-                                    <a href="/login" class="button is-fullwidth">Anmelden</a>
-                                @endguest
-                                @auth
-                                    {!! Form::open(['url' => '/products', 'method' => 'post']) !!}
-                                        {{ Form::hidden('id', '3') }}
-                                        {{ Form::submit('In den Warenkorb legen', ['class' => 'button is-fullwidth']) }}
-                                    {!! Form::close() !!}
-                                @endauth
-                            </div>
+                        <div class="mt-20 has-text-right">
+                            <button type="submit" class="button btn-align button-cta no-lh is-bold secondary-btn raised">Submit</button>
                         </div>
-                        <!-- Pricing Plan -->
-                        <div class="pricing-plan is-accent">
-                            <div class="plan-header">Enterprise</div>
-                            <div class="plan-items">
-                                <div class="plan-item"><b>Professionelles</b> Logo</div>
-                                <div class="plan-item"><b>PNG & JPEG</b> Datei</div>
-                                <div class="plan-item">Verschiedene Farben</div>
-                                <div class="plan-item">Alle Rechte</div>
-                                <div class="plan-item"><b>10</b> Überarbeitungen</div>
-                                <div class="plan-item"><b>Vector</b> Dateien</div>
-                                <div class="plan-item"><b>Source</b> Dateien</div>
-                                <div class="plan-item">Express Lieferung</div>
-                            </div>
-                            <div class="plan-footer">
-                                <div class="plan-price"><span class="plan-price-amount">49,99<span class="plan-price-currency">€</span></span></div>
-                                @guest
-                                    <a href="/login" class="button is-fullwidth">Anmelden</a>
-                                @endguest
-                                @auth
-                                    {!! Form::open(['url' => '/products', 'method' => 'post']) !!}
-                                        {{ Form::hidden('id', '4') }}
-                                        {{ Form::submit('In den Warenkorb legen', ['class' => 'button is-fullwidth']) }}
-                                    {!! Form::close() !!}
-                                @endauth
-                            </div>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>

@@ -25,13 +25,16 @@ class ServiceController extends Controller
 
     public function addToCart(Request $request){
         $id = $request->input('id');
-        if (isset($id)) {
-            $item = new Item();
-            $item->user_id = auth()->user()->id;
-            $item->product_id = $id;
-            $item->save();
+        if (isset($id))
+            return redirect('/products/create/' . $id);
+        else
+            return redirect('/');
+    }
+
+    public function create($id){
+        if($id === 1){
+            return view('products.description.logo-design');
         }
-        return redirect('/shoppingcart');
     }
 
 }
