@@ -31,8 +31,8 @@ class ServiceController extends Controller
             return redirect('/');
     }
 
-    public function create($id){
-        if($id === 1){
+    public function create($index){
+        if($index === 1){
             return view('products.description.logo-design');
         }
     }
