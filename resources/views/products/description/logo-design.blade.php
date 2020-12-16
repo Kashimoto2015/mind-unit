@@ -205,7 +205,6 @@
                         <div class="column"></div>
                         <div class="uploader-controls animated preFadeInUp fadeInUp">
                             <input type="file" name="fielduploader">
-                            <button type="submit" class="button btn-align button-cta raised no-lh is-bold secondary-btn">Upload</button>
                         </div>
                         <div class="column"></div>
                         <div class="mt-20 has-text-right">
