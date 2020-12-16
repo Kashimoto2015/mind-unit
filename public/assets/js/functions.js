@@ -1519,7 +1519,7 @@ function initFileUploader() {
   }); // enable fileuploader plugin
 
   $('input[name="dragndrop"]').fileuploader({
-    changeInput: '<div class="fileuploader-input">' + '<div class="fileuploader-input-inner">' + '<img src="{{ asset(\'assets/img/fileuploader-dragdrop-icon.png\') }}">' + '<h3 class="fileuploader-input-caption"><span>Drag and drop invoices here</span></h3>' + '<p>or</p>' + '<div class="fileuploader-input-button"><span>Browse Files</span></div>' + '</div>' + '</div>',
+    changeInput: '<div class="fileuploader-input">' + '<div class="fileuploader-input-inner">' + '<img src="/public/assets/img/fileuploader-dragdrop-icon.png">' + '<h3 class="fileuploader-input-caption"><span>Drag and drop invoices here</span></h3>' + '<p>or</p>' + '<div class="fileuploader-input-button"><span>Browse Files</span></div>' + '</div>' + '</div>',
     theme: 'dragdrop',
     upload: {
       //url: 'php/ajax_upload_file.php',
