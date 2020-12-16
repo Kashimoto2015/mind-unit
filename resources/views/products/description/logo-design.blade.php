@@ -196,7 +196,8 @@
             <div class="column is-4 is-offset-4">
                 <div class="flex-card light-bordered light-raised">
                     <div class="card-body">
-                        {!! Form::open(['url' => '/products', 'method' => 'post', 'class' => 'padding-20', 'enctype' => 'multipart/form-data']) !!}
+                        {!! Form::open(['url' => '/products/create/logo-design', 'method' => 'post', 'class' => 'padding-20', 'enctype' => 'multipart/form-data']) !!}
+                            {{ Form::hidden('index', $index) }}
                             <div class="control-material is-secondary">
                                 {{ Form::textarea('description', '', ['rows' => '5']) }}
                                 <span class="material-highlight"></span>
@@ -207,7 +208,7 @@
                             <h4>Beispieldesigns angeben</h4>
                             <div class="column"></div>
                             <div class="uploader-controls animated preFadeInUp fadeInUp">
-                                {{ Form::file('files', ['name' => 'fielduploader']) }}
+                                {{ Form::file('file', ['name' => 'onebutton']) }}
                                 <label>Bitte nur .png oder .jpg hochladen</label>
                             </div>
                             <div class="column"></div>

@@ -25,6 +25,8 @@ Route::get('/products/{index}', [\App\Http\Controllers\ServiceController::class,
 
 Route::get('/products/create/{index}', [\App\Http\Controllers\ServiceController::class, 'create']);
 
+Route::post('/products/create/logo-design', [\App\Http\Controllers\ServiceController::class, 'createLogoDesign']);
+
 Route::get('/about-us', function(){return view('about-us');});
 
 Route::get('/impressum', function(){return view('rechtliches.impressum');});
