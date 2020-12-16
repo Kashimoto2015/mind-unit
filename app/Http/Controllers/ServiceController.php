@@ -67,6 +67,8 @@ class ServiceController extends Controller
 
         $product->save();
 
+        return redirect('/shoppingcart');
+
     }
 
 }
