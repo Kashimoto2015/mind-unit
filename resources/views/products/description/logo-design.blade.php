@@ -202,17 +202,15 @@
                             <span class="bar"></span>
                             <label>Message *</label>
                         </div>
-                        <div class="columns is-vcentered pb-60">
-                            <div class="column"></div>
-                            <div class="column is-5">
-                                <div id="uploader" class="section-wrapper">
-                                    <div class="uploader-controls has-text-centered animated preFadeInUp fadeInUp">
-                                        <input type="file" name="dragndrop">
-                                    </div>
+                        <div class="column"></div>
+                        <div class="column is-5">
+                            <div id="uploader" class="section-wrapper">
+                                <div class="uploader-controls has-text-centered animated preFadeInUp fadeInUp">
+                                    <input type="file" name="dragndrop">
                                 </div>
                             </div>
-                            <div class="column"></div>
                         </div>
+                        <div class="column"></div>
                         <div class="mt-20 has-text-right">
                             <button type="submit" class="button btn-align button-cta no-lh is-bold secondary-btn raised">Submit</button>
                         </div>
