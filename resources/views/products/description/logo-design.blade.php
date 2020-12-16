@@ -201,11 +201,12 @@
                                 <textarea rows="5"></textarea>
                                 <span class="material-highlight"></span>
                                 <span class="bar"></span>
-                                <label>Message *</label>
+                                <label>Beschreibung deines Logo Designs *</label>
                             </div>
                             <div class="column"></div>
                             <div class="uploader-controls animated preFadeInUp fadeInUp">
                                 <input type="file" name="fielduploader">
+                                <label>Bitte nur .png oder .jpg hochladen</label>
                             </div>
                             <div class="column"></div>
                             <div class="mt-20 has-text-right">
