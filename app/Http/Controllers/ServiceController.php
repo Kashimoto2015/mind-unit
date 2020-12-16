@@ -54,12 +54,11 @@ class ServiceController extends Controller
             $fileNameWithExt = $request->file('file')->getClientOriginalName();
             $fileExt = $request->file('file')->getClientOriginalExtension();
             $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
-            $fileNameToStore = $fileName . '_' . date() . '.' . $fileExt;
+            $fileNameToStore = $fileName . '_' . time() . '.' . $fileExt;
             $path = $request->file('file')->storeAs('public/logo-examples', $fileNameToStore);
             $product->file_name = $fileNameToStore;
 
         }
-
 
         $product->save();
 
