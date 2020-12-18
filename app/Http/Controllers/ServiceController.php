@@ -54,7 +54,7 @@ class ServiceController extends Controller
         $product->product_id = $request->input('index');
         $product->description = $description;
 
-        if($request->hasFile('file')){
+        if ($request->hasFile('file')) {
 
             $fileNameWithExt = $request->file('file')->getClientOriginalName();
             $fileExt = $request->file('file')->getClientOriginalExtension();
