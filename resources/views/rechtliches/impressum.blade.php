@@ -194,107 +194,24 @@
     <div class="article-inner">
         <!-- Article content -->
         <div class="content">
-            <p>These terms and conditions set out the terms and conditions between you, the customer, and Css Ninja (“us”,
-                “we”, "Css Ninja"), governing the use of our website and our downloadable digital recordings including the content therein (the
-                “products”). Your use of our website, and purchase, download and use of our products, constitutes your full acceptance
-                of these terms and conditions. If you do not agree with these terms and conditions, you should not use our website or
-                purchase, download or use any of our products.</p>
+            <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
+            <p>Sanel Trnka<br />
+                Online-Shop f&uuml;r Dienstleistungen<br />
+                Harffer Stra&szlig;e 102<br />
+                41469 Neuss</p>
 
-            <p>By buying a Css Ninja product, you confirm that you
-                are in agreement with and bound by the terms and conditions contained in the Terms Of
-                Service outlined below. These terms apply to the entire website and any email or other type
-                of communication between you and Css Ninja. </p>
+            <h2>Kontakt</h2>
+            <p>Telefon: 02131 1781384<br />
+                E-Mail: kontakt@mind-unit.de</p>
 
-            <p>Under no circumstances shall Css Ninja team be liable for any direct, indirect, special,
-                incidental or consequential damages, including, but not limited to, loss of data or
-                profit, arising out of the use, or the inability to use, the materials on this site,
-                even if Css Ninja team or an authorized representative has been advised of the
-                possibility of such damages. If your use of materials from this site results in the need
-                for servicing, repair or correction of equipment or data, you assume any costs thereof.
-            </p>
+            <h2>EU-Streitschlichtung</h2>
+            <p>Die Europ&auml;ische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr</a>.<br /> Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
 
-            <p>Css Ninja will not be responsible for any outcome
-                that may occur during the course of usage of our resources.We reserve the rights to
-                change prices and revise the resources usage policy in any moment.</p>
+            <h2>Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle</h2>
+            <p>Wir nehmen an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teil. Zust&auml;ndig ist die Universalschlichtungsstelle des Zentrums f&uuml;r Schlichtung e.V., Stra&szlig;burger Stra&szlig;e 8, 77694 Kehl am Rhein (<a href="https://www.verbraucher-schlichter.de" rel="noopener noreferrer" target="_blank">https://www.verbraucher-schlichter.de</a>).</p>
 
-            <h4 class="subtitle is-5 dark-text">Products</h4>
+            <h3>Haftung f&uuml;r Inhalte</h3> <p>Als Diensteanbieter sind wir gem&auml;&szlig; &sect; 7 Abs.1 TMG f&uuml;r eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach &sect;&sect; 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, &uuml;bermittelte oder gespeicherte fremde Informationen zu &uuml;berwachen oder nach Umst&auml;nden zu forschen, die auf eine rechtswidrige T&auml;tigkeit hinweisen.</p> <p>Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unber&uuml;hrt. Eine diesbez&uuml;gliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung m&ouml;glich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p> <h3>Haftung f&uuml;r Links</h3> <p>Unser Angebot enth&auml;lt Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb k&ouml;nnen wir f&uuml;r diese fremden Inhalte auch keine Gew&auml;hr &uuml;bernehmen. F&uuml;r die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf m&ouml;gliche Rechtsverst&ouml;&szlig;e &uuml;berpr&uuml;ft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.</p> <p>Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p> <h3>Urheberrecht</h3> <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielf&auml;ltigung, Bearbeitung, Verbreitung und jede Art der Verwertung au&szlig;erhalb der Grenzen des Urheberrechtes bed&uuml;rfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur f&uuml;r den privaten, nicht kommerziellen Gebrauch gestattet.</p> <p>Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
 
-            <p>All products and services are delivered by Css Ninja electronically. Every download link issued by Css Ninja is personal and you should not share it. To prevent abusive behaviors, all Css Ninja product download links will expire after 50 successful downloads. A license should be bought each time you use a Css Ninja product in one of your projects (personal license). You can buy some of our products on other marketplaces. In that case, the Terms Of Service of those marketplaces prevail. </p>
-
-            <h4 class="subtitle is-5 dark-text">License and Use</h4>
-
-            <p>Your purchase of one of our products constitutes our granting to you of a non-exclusive, non-sublicensable,
-                non-transferable license to download and access that product for the purpose of your own personal use and reference, and
-                print or convert the product to an image or vector format for your own storage, retention and reference (the “purpose”).</p>
-
-            <p>You agree that under no circumstances shall you use, or permit to be used, any product other than for the aforesaid
-                purpose. For the avoidance of doubt, you shall not copy, re-sell, sublicense, rent out, share or otherwise distribute
-                any of our products, whether modified or not, to any third party. You agree not to use any of our products in a way
-                which might be detrimental to us or damage our reputation.</p>
-
-            <p>For more information about licenses, please refer to the <a href="/help/terms/licenses/personal" target="_blank">Personal License</a> and <a href="/help/terms/licenses/developer" target="_blank">Developer License</a></p>
-
-            <h4 class="subtitle is-5 dark-text">Payments</h4>
-
-            <p>We process all of our payments through PayPal. PayPal is fully compliant with OFAC regulations, restricting
-                shoppers from the following countries from placing orders.</p>
-            <ul>
-                <li>The Islamic Republic of Iran</li>
-                <li>The Republic of Cuba</li>
-                <li>The State of Libya</li>
-                <li>The Republic of Sudan</li>
-                <li>The Syrian Arab Republic</li>
-                <li>The Democratic People's Republic of Korea</li>
-            </ul>
-            <p>The list of countries can be updated without any notice at any moment by OFAC and will be applied immediately. Check the
-                official OFAC website for the latest updates.</p>
-
-            <h4 class="subtitle is-5 dark-text">Cookie policy</h4>
-
-            <p>A cookie is a file containing an identifier (a string of letters and numbers) that is
-                sent by a web server to a web browser and is stored by the browser. The identifier is
-                then sent back to the server each time the browser requests a page from the server. Our
-                website uses cookies. By using our website and agreeing to this policy, you consent to
-                our use of cookies in accordance with the terms of this policy.</p>
-
-            <p>We use Google Analytics to analyse the use of our website. Our analytics service provider
-                generates statistical and other information about website use by means of cookies. Our
-                analytics service provider's privacy policy is available at:
-                <a href="http://www.google.com/policies/privacy/" target="_blank">http://www.google.com/policies/privacy/</a>.</p>
-
-            <h4 class="subtitle is-5 dark-text">Refunds and Chargebacks</h4>
-
-            <p>Once a product has been purchased by you, no right of cancellation or refund exists under the Consumer Protection
-                (Distance Selling) Regulations 2000 due to the electronic nature of our products. Any refunds shall be at our sole and
-                absolute discretion. You agree that under no circumstances whatsoever shall you initiate any chargebacks via your
-                payment provider. You agree that any payments made by you for any of our products are final and may not be charged back.
-                We reserve the right to alter any of our prices from time to time.</p>
-            <p>You have 24 hours to inspect your purchase and to determine if it does not meet with the
-                expectations laid forth by the seller. In the event that you wish to receive a refund,
-                Css Ninja will issue you a refund and ask you to specify how the product failed to live
-                up to expectations.</p>
-
-            <h4 class="subtitle is-5 dark-text">Warranties and Liability</h4>
-
-            <p>We make every effort to ensure that our products are accurate, authoritaive and fit for the use of our customers.
-                However, we take no responsibility whatsoever for the suitability of the product, and we provide no warranties as to the
-                function or use of the product, whether express, implied or statutory, including without limitation any warranties of
-                merchantability or fitness for particular purpose</p>
-
-            <p>You agree to indemnify us against all liabilities, claims, demands,
-                expenses, actions, costs, damages, or loss arising out of your breach of these terms and conditions. Furthermore, we
-                shall not be liable to you or any party for consequential, indirect, special or exemplary damages including but not
-                limited to damages for loss of profits, business or anticipated benefits whether arising under tort, contract,
-                negligence or otherwise whether or not foreseen, reasonably foreseeable or advised of the possibility of such damages.</p>
-
-            <h4 class="subtitle is-5 dark-text">Ownership</h4>
-
-            <p>Ownership of the product is governed by the usage license selected by the buyer.</p>
-
-            <h4 class="subtitle is-5 dark-text">Term changes</h4>
-
-            <p>If we change our terms of use we will post those changes on this page. Registered users
-                will be sent an email that outlines changes made to the terms of use.</p>
 
         </div>
         <!-- /Article content -->
