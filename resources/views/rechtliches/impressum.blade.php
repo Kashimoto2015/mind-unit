@@ -192,19 +192,6 @@
 <!-- Article body -->
 <div class="flex-card single-help-article">
     <div class="article-inner">
-        <!-- Article meta -->
-        <h2 class="title is-3 dark-text">
-            Terms of Service
-        </h2>
-        <h3 class="subtitle is-5">General Terms of Service</h3>
-        <div class="article-meta">
-            <img class="small-avatar" src="https://cssninja.io/themes/cssninja/assets/images/logo/cssninja-icon.svg" alt="">
-            <div class="meta-info">
-                <div class="author">Written by <span>Driss</span></div>
-                <div class="status">Published on dec 12 2020</div>
-            </div>
-        </div>
-
         <!-- Article content -->
         <div class="content">
             <p>These terms and conditions set out the terms and conditions between you, the customer, and Css Ninja (“us”,
