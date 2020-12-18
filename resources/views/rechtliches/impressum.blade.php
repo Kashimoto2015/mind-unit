@@ -22,7 +22,7 @@
 <div class="pageloader"></div>
 <div class="infraloader is-active"></div>
 <!-- Hero (Parallax) and nav -->
-<div class="hero is-app-grey">
+<div class="hero is-app-night">
 
     <nav class="navbar navbar-wrapper is-cloned">
         <div class="container">
