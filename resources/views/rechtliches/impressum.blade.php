@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title> Bulkit - About-Us</title>
+    <title> Bulkit - Impressum</title>
     <link rel="icon" type="image/png" href="{{ asset('assets/img/favicon.png') }}" />
 
     <!--Core CSS -->
