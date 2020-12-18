@@ -190,8 +190,8 @@
 </div>
 
 <!-- Article body -->
-<div class="flex-card">
-    <div class="article-inner">
+<div class="flex-card single-help-article">
+    <div class="">
         <!-- Article meta -->
         <h2 class="title is-3 dark-text">
             Terms of Service
