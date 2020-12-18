@@ -190,7 +190,7 @@
 </div>
 
 <!-- Article body -->
-<div class="flex-card single-help-article">
+<div class="flex-card">
     <div class="article-inner">
         <!-- Article meta -->
         <h2 class="title is-3 dark-text">
